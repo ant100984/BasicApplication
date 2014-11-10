@@ -1,0 +1,99 @@
+2014-02-27 00:03:04,828 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-27 00:07:38,781 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-27 00:08:01,156 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-27 00:08:02,000 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@21090185 (XID = 1382), (SESSIONID = 1), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-27 00:08:02,046 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ==>  Preparing: select case when max(id)+1 IS NULL then 1 else max(id)+1 end as nextVal from articoli 
+2014-02-27 00:08:03,281 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ==> Parameters: 
+2014-02-27 00:08:03,484 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-27 00:08:03,484 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.insertSelective - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@9943936 (XID = 1386), (SESSIONID = 3), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-27 00:08:03,500 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.insertSelective - ==>  Preparing: insert into JSTORE.ARTICOLI ( ID, TIPOLOGIA_ARTICOLO, QUANTITA, CODICE, DESCRIZIONE_BREVE, NOTE, SCARSITA, IMPORTO_UNITARIO, DTM_INS, DTM_MOD ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2014-02-27 00:08:03,640 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.insertSelective - ==> Parameters: 1(Integer), 1(Integer), 333(Integer), 123123(String), asdas(String), asdasdas(String), 3(Integer), 3.0(Double), 2014-02-27 00:08:03.437(Timestamp), 2014-02-27 00:08:03.437(Timestamp)
+2014-02-27 00:08:03,734 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [org.apache.derby.impl.jdbc.EmbedConnection40@9943936 (XID = 1386), (SESSIONID = 3), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-27 00:08:03,734 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [org.apache.derby.impl.jdbc.EmbedConnection40@9943936 (XID = 1386), (SESSIONID = 3), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-27 00:08:03,734 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [org.apache.derby.impl.jdbc.EmbedConnection40@9943936 (XID = 1386), (SESSIONID = 3), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-27 00:08:09,500 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-27 00:08:09,500 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.updateByPrimaryKey - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@18788820 (XID = 1390), (SESSIONID = 5), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-27 00:08:09,500 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.updateByPrimaryKey - ==>  Preparing: update JSTORE.ARTICOLI set TIPOLOGIA_ARTICOLO = ?, QUANTITA = ?, CODICE = ?, DESCRIZIONE_BREVE = ?, NOTE = ?, SCARSITA = ?, IMPORTO_UNITARIO = ?, DTM_INS = ?, DTM_MOD = ?, FORNITORE = ? where ID = ? 
+2014-02-27 00:08:09,640 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.updateByPrimaryKey - ==> Parameters: 1(Integer), 333(Integer), 123123(String), asdas(String), asdasdas(String), 3(Integer), 3.0(Double), 2014-02-27 00:08:09.5(Timestamp), 2014-02-27 00:08:09.5(Timestamp), null, 1(Integer)
+2014-02-27 00:08:09,671 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [org.apache.derby.impl.jdbc.EmbedConnection40@18788820 (XID = 1390), (SESSIONID = 5), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-27 00:08:09,671 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [org.apache.derby.impl.jdbc.EmbedConnection40@18788820 (XID = 1390), (SESSIONID = 5), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-27 00:08:09,671 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [org.apache.derby.impl.jdbc.EmbedConnection40@18788820 (XID = 1390), (SESSIONID = 5), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-27 00:11:14,828 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-27 00:15:50,453 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-27 21:54:50,359 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-27 21:56:37,125 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-27 21:57:20,390 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-27 21:57:59,968 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-27 21:58:01,515 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@13036772 (XID = 1398), (SESSIONID = 1), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-27 21:58:01,578 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ==>  Preparing: select case when max(id)+1 IS NULL then 1 else max(id)+1 end as nextVal from articoli 
+2014-02-27 21:58:02,843 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ==> Parameters: 
+2014-02-27 21:58:03,062 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-27 21:58:03,078 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.insertSelective - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@12848250 (XID = 1402), (SESSIONID = 3), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-27 21:58:03,078 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.insertSelective - ==>  Preparing: insert into JSTORE.ARTICOLI ( ID, TIPOLOGIA_ARTICOLO, QUANTITA, CODICE, DESCRIZIONE_BREVE, NOTE, SCARSITA, IMPORTO_UNITARIO, DTM_INS, DTM_MOD ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2014-02-27 21:58:03,281 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.insertSelective - ==> Parameters: 2(Integer), 1(Integer), 0(Integer), 1001(String), Crema idratante(String), Dermomed(String), 5(Integer), 5.0(Double), 2014-02-27 21:58:03.015(Timestamp), 2014-02-27 21:58:03.015(Timestamp)
+2014-02-27 21:58:03,343 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [org.apache.derby.impl.jdbc.EmbedConnection40@12848250 (XID = 1402), (SESSIONID = 3), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-27 21:58:03,343 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [org.apache.derby.impl.jdbc.EmbedConnection40@12848250 (XID = 1402), (SESSIONID = 3), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-27 21:58:03,343 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [org.apache.derby.impl.jdbc.EmbedConnection40@12848250 (XID = 1402), (SESSIONID = 3), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-27 21:58:17,140 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-27 22:01:13,078 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-27 22:23:28,609 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-27 22:23:33,312 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-27 22:23:34,281 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@3825280 (XID = 1411), (SESSIONID = 1), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-27 22:23:34,312 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==>  Preparing: select ID, DESCRIZIONE, CODICE, CONSIDERA_QUANTITA, CONSIDERA_FORNITORE from JSTORE.TIPOLOGIA_ARTICOLO 
+2014-02-27 22:23:35,265 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==> Parameters: 
+2014-02-27 22:25:43,703 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-27 22:25:50,296 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-27 22:25:51,265 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@32194158 (XID = 1412), (SESSIONID = 1), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-27 22:25:51,296 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==>  Preparing: select ID, DESCRIZIONE, CODICE, CONSIDERA_QUANTITA, CONSIDERA_FORNITORE from JSTORE.TIPOLOGIA_ARTICOLO 
+2014-02-27 22:25:52,250 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==> Parameters: 
+2014-02-27 22:27:49,859 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-27 22:27:54,468 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-27 22:27:55,437 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@9633525 (XID = 1413), (SESSIONID = 1), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-27 22:27:55,484 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==>  Preparing: select ID, DESCRIZIONE, CODICE, CONSIDERA_QUANTITA, CONSIDERA_FORNITORE from JSTORE.TIPOLOGIA_ARTICOLO 
+2014-02-27 22:27:56,406 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==> Parameters: 
+2014-02-27 22:28:24,015 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-27 22:28:28,406 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-27 22:28:29,375 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@16406343 (XID = 1414), (SESSIONID = 1), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-27 22:28:29,421 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==>  Preparing: select ID, DESCRIZIONE, CODICE, CONSIDERA_QUANTITA, CONSIDERA_FORNITORE from JSTORE.TIPOLOGIA_ARTICOLO 
+2014-02-27 22:28:30,359 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==> Parameters: 
+2014-02-27 22:32:34,953 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-27 22:32:39,937 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-27 22:32:40,875 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@13011878 (XID = 1415), (SESSIONID = 1), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-27 22:32:40,906 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==>  Preparing: select ID, DESCRIZIONE, CODICE, CONSIDERA_QUANTITA, CONSIDERA_FORNITORE from JSTORE.TIPOLOGIA_ARTICOLO 
+2014-02-27 22:32:41,828 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==> Parameters: 
+2014-02-27 22:39:44,640 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-27 22:39:49,546 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-27 22:39:50,500 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@13011878 (XID = 1416), (SESSIONID = 1), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-27 22:39:50,531 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==>  Preparing: select ID, DESCRIZIONE, CODICE, CONSIDERA_QUANTITA, CONSIDERA_FORNITORE from JSTORE.TIPOLOGIA_ARTICOLO 
+2014-02-27 22:39:51,468 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==> Parameters: 
+2014-02-27 22:41:27,234 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-27 22:41:27,234 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@9695171 (XID = 1420), (SESSIONID = 3), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-27 22:41:27,234 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==>  Preparing: select ID, DESCRIZIONE, CODICE, CONSIDERA_QUANTITA, CONSIDERA_FORNITORE from JSTORE.TIPOLOGIA_ARTICOLO 
+2014-02-27 22:41:27,234 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==> Parameters: 
+2014-02-27 22:57:43,546 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-27 22:59:40,140 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-27 22:59:46,421 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-27 22:59:47,359 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@18244062 (XID = 1417), (SESSIONID = 1), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-27 22:59:47,390 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==>  Preparing: select ID, DESCRIZIONE, CODICE, CONSIDERA_QUANTITA, CONSIDERA_FORNITORE from JSTORE.TIPOLOGIA_ARTICOLO 
+2014-02-27 22:59:48,328 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==> Parameters: 
+2014-02-27 23:00:10,453 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-27 23:00:10,453 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@28913087 (XID = 1421), (SESSIONID = 3), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-27 23:00:10,453 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ==>  Preparing: select case when max(id)+1 IS NULL then 1 else max(id)+1 end as nextVal from articoli 
+2014-02-27 23:00:10,625 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ==> Parameters: 
+2014-02-27 23:00:10,671 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-27 23:00:10,671 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.insertSelective - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@3408281 (XID = 1425), (SESSIONID = 5), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-27 23:00:10,671 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.insertSelective - ==>  Preparing: insert into JSTORE.ARTICOLI ( ID, TIPOLOGIA_ARTICOLO, CODICE, DESCRIZIONE_BREVE, NOTE, IMPORTO_UNITARIO, DTM_INS, DTM_MOD ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2014-02-27 23:00:10,812 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.insertSelective - ==> Parameters: 3(Integer), 0(Integer), 102(String), Manicure(String), (String), 5.0(Double), 2014-02-27 23:00:10.64(Timestamp), 2014-02-27 23:00:10.64(Timestamp)
+2014-02-27 23:00:10,890 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [org.apache.derby.impl.jdbc.EmbedConnection40@3408281 (XID = 1425), (SESSIONID = 5), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-27 23:00:10,890 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [org.apache.derby.impl.jdbc.EmbedConnection40@3408281 (XID = 1425), (SESSIONID = 5), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-27 23:00:10,890 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [org.apache.derby.impl.jdbc.EmbedConnection40@3408281 (XID = 1425), (SESSIONID = 5), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-27 23:00:46,531 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-27 23:00:46,546 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@19833813 (XID = 1429), (SESSIONID = 7), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-27 23:00:46,546 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==>  Preparing: select ID, DESCRIZIONE, CODICE, CONSIDERA_QUANTITA, CONSIDERA_FORNITORE from JSTORE.TIPOLOGIA_ARTICOLO 
+2014-02-27 23:00:46,546 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==> Parameters: 
+2014-02-27 23:07:37,984 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-27 23:22:13,718 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-27 23:24:29,937 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-27 23:24:30,843 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@2816958 (XID = 1433), (SESSIONID = 1), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-27 23:24:30,875 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==>  Preparing: select ID, DESCRIZIONE, CODICE, CONSIDERA_QUANTITA, CONSIDERA_FORNITORE from JSTORE.TIPOLOGIA_ARTICOLO 
+2014-02-27 23:24:31,796 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==> Parameters: 

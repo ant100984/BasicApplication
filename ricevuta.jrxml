@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" language="groovy" pageWidth="225" pageHeight="368" columnWidth="225" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="2ec3dd93-18f7-43b7-a43e-4e0faa4578c9">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="idFattura" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[".\\"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT  c.ragione_sociale,
+	c.piva_cf,
+	c.indirizzo,
+	c.cap,
+	c.citta,
+	c.telefono,
+	c.email,
+	f.id AS idFattura,
+	f.totale,
+	f.imponibile,
+	f.iva,
+	date_format(f.dtm_emissione,'%d/%m/%Y %H:%i:%s') as dtm_emissione
+  FROM  application_properties c, fatture f
+ WHERE  f.id = $P{idFattura}]]>
+	</queryString>
+	<field name="ragione_sociale" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="piva_cf" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="indirizzo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cap" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="citta" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telefono" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="email" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="idFattura" class="java.lang.Integer"/>
+	<field name="totale" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="imponibile" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="iva" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dtm_emissione" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<pageHeader>
+		<band height="132">
+			<image>
+				<reportElement uuid="9bbb1a1c-f09b-41c1-9d93-e73d51e9b2d0" x="22" y="19" width="32" height="33"/>
+				<imageExpression><![CDATA[".\\logo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="04f6a240-4a3e-48ec-97fb-c0a32caff735" x="201" y="-6" width="7" height="16"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[x]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="fd1c1b1d-cb7d-41ea-bc16-e98d5b435b97" x="59" y="28" width="158" height="12"/>
+				<textElement>
+					<font fontName="Times New Roman" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{indirizzo} + ", " + $F{cap} + " " + $F{citta}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="68a313cd-e41d-4391-a6e9-bba6a014946c" x="59" y="8" width="158" height="12"/>
+				<textElement>
+					<font fontName="Times New Roman" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ragione_sociale}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="9de00277-29a6-48f1-b3c1-b4ca2cc7c43d" x="59" y="38" width="158" height="12"/>
+				<textElement>
+					<font fontName="Times New Roman" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Tel. " + $F{telefono}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ae732126-d90d-4b22-8b1d-be49c9e40e2d" x="59" y="18" width="158" height="12"/>
+				<textElement>
+					<font fontName="Times New Roman" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["P.iva " + $F{piva_cf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="75995fde-8d19-49f0-b3eb-ae60778798c1" x="59" y="48" width="158" height="12"/>
+				<textElement>
+					<font fontName="Times New Roman" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Email " + $F{email}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="35">
+			<subreport>
+				<reportElement uuid="5aec293e-92df-45d3-9393-7e23206cabd3" stretchType="RelativeToBandHeight" x="0" y="0" width="225" height="35"/>
+				<subreportParameter name="idFattura">
+					<subreportParameterExpression><![CDATA[$F{idFattura}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "ricevuta_dettaglio.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="22" splitType="Prevent">
+			<staticText>
+				<reportElement uuid="b4c24773-c8e9-4763-a9de-e967a712667e" positionType="FixRelativeToBottom" x="99" y="2" width="62" height="12"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Importo pagato]]></text>
+			</staticText>
+			<textField pattern="¤ #,##0.00">
+				<reportElement uuid="4adea9dd-b2e9-4410-aa61-6c6b82ae2627" positionType="FixRelativeToBottom" x="162" y="2" width="53" height="12"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Times New Roman" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{totale}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="1cbacf71-7406-4d2d-a9d2-61298a367c98" x="15" y="0" width="202" height="1"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="8">
+			<textField>
+				<reportElement uuid="788d3e7c-cc59-4e25-aba8-98b6ecb6ada7" x="115" y="0" width="94" height="8"/>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Pagina "+$V{PAGE_NUMBER}+" di"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="492551a1-7150-4640-8910-a75e5a1a0de3" x="210" y="0" width="9" height="8"/>
+				<textElement>
+					<font fontName="Times New Roman" size="6" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f6e3eae4-d9a9-4b77-8ba4-43f30150c32a" positionType="FixRelativeToBottom" x="18" y="0" width="84" height="8"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dtm_emissione}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

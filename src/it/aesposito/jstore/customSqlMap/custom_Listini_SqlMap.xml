@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="custom_Listini" >
+    
+ <resultMap id="getListiniResultMap" type="it.aesposito.jstore.bean.ListinoForView" >
+	  <result column="id" property="id" jdbcType="INTEGER" />
+	  <result column="descrizione" property="descrizione" jdbcType="VARCHAR" />
+          <result column="tipologia_listino" property="descrTipologia" jdbcType="VARCHAR" />
+	  <result column="ricarico" property="ricarico" jdbcType="DOUBLE" />
+	</resultMap>
+   
+	<select id="getListini" resultMap="getListiniResultMap" parameterType="java.util.Map">
+	      SELECT l.id,
+                     l.descrizione,
+                     l.ricarico,
+                     t.descrizione as tipologia_listino
+                FROM listino l
+                JOIN tipologia_articolo t on l.tipologia_listino = t.id
+               WHERE 1=1
+            <if test="descrizione != null">
+                     AND l.descrizione like #{descrizione}
+            </if>
+            <if test="tipologia != null and tipologia != -1">
+                     AND l.tipologia_listino = #{tipologia}
+            </if>
+                ORDER BY id DESC
+            <if test="offset != -1 and limit != -1">
+                LIMIT #{offset},#{limit}
+            </if>
+	</select>
+        
+        <select id="getCountListini" resultType="java.lang.Integer" parameterType="java.util.Map">
+	      SELECT count(*)
+                FROM listino l
+                JOIN tipologia_articolo t on l.tipologia_listino = t.id
+               WHERE 1=1
+            <if test="descrizione != null">
+                     AND l.descrizione like #{descrizione}
+            </if>
+            <if test="tipologia != null and tipologia != -1">
+                     AND l.tipologia_listino = #{tipologia}
+            </if>
+	</select>
+</mapper>

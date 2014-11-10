@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//ibatis.apache.org//DTD Config 3.0//EN"
+  "http://ibatis.apache.org/dtd/ibatis-3-config.dtd">
+<configuration>
+
+    <environments default="development" >
+
+        <environment id="development" >
+
+            <transactionManager type="JDBC"/>
+
+            <dataSource type="UNPOOLED" >
+
+                <property
+                    name="driver"
+                    value="com.mysql.jdbc.Driver" />
+
+                <property
+                    name="url"
+                    value="jdbc:mysql://127.0.0.1:3306/jStore" />
+
+                <property
+                    name="username"
+                    value="root" />
+
+                <property
+                    name="password"
+                    value="root" />
+            </dataSource>
+        </environment>
+    </environments>
+
+    <mappers>
+        <mapper resource="it/aesposito/jstore/sqlMap/ArticoliMapper.xml" />
+        <mapper resource="it/aesposito/jstore/sqlMap/ArticoloFatturaMapper.xml" />
+        <mapper resource="it/aesposito/jstore/sqlMap/CategorieMapper.xml" />
+        <mapper resource="it/aesposito/jstore/sqlMap/FattureMapper.xml" />
+        <mapper resource="it/aesposito/jstore/sqlMap/FornitoriMapper.xml" />
+        <mapper resource="it/aesposito/jstore/sqlMap/ListinoMapper.xml" />
+        <mapper resource="it/aesposito/jstore/sqlMap/TipologiaArticoloMapper.xml" />
+        <mapper resource="it/aesposito/jstore/sqlMap/ApplicationPropertiesMapper.xml" />
+        <mapper resource="it/aesposito/jstore/sqlMap/IvaMapper.xml" />
+        <mapper resource="it/aesposito/customSqlMap/custom_nextVal_SqlMap.xml" />
+        <mapper resource="it/aesposito/jstore/customSqlMap/custom_Articoli_SqlMap.xml" />
+        <mapper resource="it/aesposito/jstore/customSqlMap/custom_Listini_SqlMap.xml" />
+        <mapper resource="it/aesposito/jstore/customSqlMap/custom_Iva_SqlMap.xml" />
+        <mapper resource="it/aesposito/jstore/customSqlMap/custom_Categorie_SqlMap.xml" />
+        <mapper resource="it/aesposito/jstore/customSqlMap/custom_Vendite_SqlMap.xml" />
+    </mappers>
+
+</configuration>

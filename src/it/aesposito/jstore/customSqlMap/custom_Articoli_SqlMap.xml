@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="custom_Articoli" >
+    
+    <resultMap id="getArticoliResultMap" type="it.aesposito.jstore.bean.ArticoloForView" >
+       <result column="id" property="id" jdbcType="INTEGER" />
+       <result column="codice" property="codice" jdbcType="VARCHAR" />
+       <result column="descrizione" property="descrizione" jdbcType="VARCHAR" />
+       <result column="importo_unitario" property="importoUnitario" jdbcType="DOUBLE" />
+       <result column="categoria" property="categoriaForView" jdbcType="VARCHAR"/>
+       <result column="iva" property="iva" jdbcType="DOUBLE"/>
+       <result column="giacenza" property="giacenza" jdbcType="INTEGER"/>
+       <result column="scarsita" property="scarsita" jdbcType="INTEGER"/>
+       <result column="tipologia_articolo" property="tipologiaArticolo" jdbcType="INTEGER"/>
+       <result column="note" property="note" jdbcType="VARCHAR"/>
+       <result column="fornitore" property="fornitore" jdbcType="INTEGER" />
+     </resultMap>
+   
+    <select id="getArticoli" resultMap="getArticoliResultMap" parameterType="java.util.Map">
+          SELECT a.id,
+                a.tipologia_articolo,
+                a.giacenza,
+                a.codice,
+                a.descrizione,
+                a.note,
+                a.scarsita,
+                a.importo_unitario,
+                a.fornitore,
+                a.iva,
+                c.descrizione AS categoria
+           FROM articoli a
+         LEFT JOIN categorie c ON c.id = a.categoria
+         WHERE 1=1
+        <if test="tipologiaArticolo != null">
+               AND a.tipologia_articolo = #{tipologiaArticolo}
+        </if>
+        <if test="codice != null">
+               AND a.codice like #{codice}
+        </if> 
+        <if test="descrizione != null">
+               AND a.descrizione like #{descrizione}
+        </if>
+        <if test="categoria != null and categoria != -1">
+               AND a.categoria = #{categoria}
+        </if>
+        <if test="sottoScorta">
+               AND a.giacenza &lt; a.scarsita
+        </if>
+        <if test="terminati">
+               AND a.giacenza = 0
+        </if>
+                ORDER BY id DESC
+        <if test="offset != -1 and limit != -1">
+            LIMIT #{offset},#{limit}
+        </if>
+    </select>
+        
+    <resultMap id="getRiepilogoArticoliResultMap" type="it.aesposito.jstore.bean.RiepilogoArticoli" >
+       <result column="giacenzaTotale" property="giacenzaTotale" jdbcType="INTEGER"/>
+       <result column="ivaTotale" property="ivaTotale" jdbcType="DOUBLE"/>
+       <result column="imponibileTotale" property="imponibileTotale" jdbcType="DOUBLE"/>
+       <result column="importoTotale" property="importoTotale" jdbcType="DOUBLE"/>     
+       <result column="numResults" property="numResults" jdbcType="INTEGER"/>
+     </resultMap>
+        
+    <select id="getRiepilogoArticoli" resultMap="getRiepilogoArticoliResultMap" parameterType="java.util.Map">
+          SELECT if(sum(a.giacenza) is null,0,sum(a.giacenza)) as giacenzaTotale,
+                 if(sum((a.importo_unitario*a.giacenza) * (a.iva/100)) is null,0,sum((a.importo_unitario*a.giacenza) * (a.iva/100))) as ivaTotale,
+                 if(sum(a.importo_unitario*a.giacenza) is null,0,sum(a.importo_unitario*a.giacenza)) as imponibileTotale,
+                 if(sum((a.importo_unitario*a.giacenza) * (1+(a.iva/100))) is null,0,sum((a.importo_unitario*a.giacenza) * (1+(a.iva/100)))) as importoTotale,
+                 count(*) as numResults
+           FROM articoli a
+         LEFT JOIN categorie c ON c.id = a.categoria
+         WHERE 1=1
+        <if test="tipologiaArticolo != null">
+               AND a.tipologia_articolo = #{tipologiaArticolo}
+        </if>
+        <if test="codice != null">
+               AND a.codice like #{codice}
+        </if> 
+        <if test="descrizione != null">
+               AND a.descrizione like #{descrizione}
+        </if>
+        <if test="categoria != null and categoria != -1">
+               AND a.categoria = #{categoria}
+        </if>
+        <if test="sottoScorta">
+               AND a.giacenza &lt; a.scarsita
+        </if>
+        <if test="terminati">
+               AND a.giacenza = 0
+        </if>
+    </select>
+        
+    <select id="checkArticoloSottoScorta" resultType="java.lang.Integer" parameterType="java.util.Map">
+          SELECT count(*)
+            FROM articoli a
+           WHERE a.giacenza &lt; a.scarsita
+    </select>
+    
+    <resultMap id="getArticoliFatturaResultMap" type="it.aesposito.jstore.bean.ArticoloFatturaForView" >
+       <result column="id" property="id" jdbcType="INTEGER" />
+       <result column="articolo" property="articolo" jdbcType="INTEGER" />
+       <result column="fattura" property="fattura" jdbcType="INTEGER" />
+       <result column="listino" property="listino" jdbcType="INTEGER" />
+       <result column="quantita" property="quantita" jdbcType="INTEGER"/>
+       <result column="iva" property="iva" jdbcType="DOUBLE"/>
+       <result column="imponibile" property="imponibile" jdbcType="DOUBLE"/>
+       <result column="importo" property="importo" jdbcType="DOUBLE"/>
+       <result column="descrizione" property="descrizione" jdbcType="VARCHAR"/>
+     </resultMap>
+     
+     <select id="getArticoliFattura" resultMap="getArticoliFatturaResultMap" parameterType="java.util.Map">
+          SELECT af.id,
+                af.articolo,
+                af.fattura,
+                af.listino,
+                af.quantita,
+                af.iva,
+                af.imponibile,
+                af.importo,
+                CONCAT(a.descrizione,' - ',l.descrizione) AS descrizione
+           FROM articolo_fattura af
+         JOIN articoli a ON a.id = af.articolo
+         JOIN fatture f on f.id = af.fattura
+         JOIN listino l ON af.listino = l.id
+         WHERE 1=1
+         <if test="idVendita != null">
+             AND f.id = #{idVendita}
+         </if>
+     </select>
+     
+     <update id="ripristinaGiacenza" parameterType="java.util.Map">
+         UPDATE articoli a
+            JOIN articolo_fattura af ON af.articolo = a.id
+             SET a.giacenza = a.giacenza + IF(a.tipologia_articolo = 1,af.`quantita`,0)
+           WHERE af.fattura = #{idVendita}
+     </update>
+</mapper>

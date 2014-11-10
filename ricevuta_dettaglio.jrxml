@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ricevuta_dettaglio" language="groovy" pageWidth="226" pageHeight="15" columnWidth="226" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="ba621c93-9b4a-4df0-adcf-de6fad6cb814">
+	<property name="ireport.zoom" value="4.0"/>
+	<property name="ireport.x" value="81"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="idFattura" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select a.id,
+       sum(af.quantita) as quantita ,
+       a.descrizione,
+       sum(af.importo) as importo
+from articolo_fattura af
+join articoli a on a.id = af.articolo
+where af.fattura = $P{idFattura}
+group by id,descrizione]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="quantita" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="descrizione" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="importo" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<detail>
+		<band height="15" splitType="Stretch">
+			<textField>
+				<reportElement uuid="cc852502-fdf0-4649-83d3-53a630f37fc4" x="10" y="0" width="22" height="12"/>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{quantita} + " x "]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="c74fcc19-506e-44b4-9aca-59cdb7e59f55" x="33" y="0" width="131" height="12"/>
+				<textElement>
+					<font fontName="Times New Roman" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{descrizione}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00">
+				<reportElement uuid="c29bc2c4-262e-481d-81d4-0f625b2745a3" x="165" y="0" width="50" height="12"/>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{importo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

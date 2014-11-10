@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="custom_Vendite" >
+    
+        <resultMap id="getVenditeResultMap" type="it.aesposito.jstore.bean.Fatture" >
+	  <result column="id" property="id" jdbcType="INTEGER" />
+	  <result column="iva" property="iva" jdbcType="DOUBLE" />
+          <result column="totale" property="totale" jdbcType="DOUBLE" />
+	  <result column="imponibile" property="imponibile" jdbcType="DOUBLE" />
+          <result column="dtm_emissione" property="dtmEmissione" jdbcType="TIMESTAMP" />
+          <result column="dtm_modifica" property="dtmModifica" jdbcType="TIMESTAMP" />
+	</resultMap>
+   
+	<select id="getVendite" resultMap="getVenditeResultMap" parameterType="java.util.Map">
+	      SELECT f.id,
+                     f.iva,
+                     f.imponibile,
+                     f.totale,
+                     f.dtm_emissione,
+                     f.dtm_modifica
+                FROM fatture f
+               WHERE 1=1
+            <if test="dataDa != null">
+                     AND date(if(f.dtm_emissione is null,f.dtm_modifica,f.dtm_emissione)) &gt;= #{dataDa}
+            </if>
+            <if test="dataA != null">
+                     AND date(if(f.dtm_emissione is null,f.dtm_modifica,f.dtm_emissione)) &lt;= #{dataA}
+            </if>
+                ORDER BY id DESC
+            <if test="offset != -1 and limit != -1">
+                LIMIT #{offset},#{limit}
+            </if>
+	</select>
+        
+        <resultMap id="getRiepilogoVenditeResultMap" type="it.aesposito.jstore.bean.RiepilogoVendite" >
+	  <result column="iva" property="iva" jdbcType="DOUBLE" />
+          <result column="totale" property="totale" jdbcType="DOUBLE" />
+	  <result column="imponibile" property="imponibile" jdbcType="DOUBLE" />
+          <result column="numResults" property="numResults" jdbcType="INTEGER" />
+          <result column="numRicevute" property="numRicevute" jdbcType="INTEGER" />
+	</resultMap>
+        
+        <select id="getRiepilogoVendite" resultMap="getRiepilogoVenditeResultMap" parameterType="java.util.Map">
+	      SELECT IF(SUM(CASE WHEN f.dtm_emissione IS NULL THEN 0 ELSE f.iva END) IS NULL,0,SUM(CASE WHEN f.dtm_emissione IS NULL THEN 0 ELSE f.iva END)) AS iva,
+                    IF(SUM(CASE WHEN f.dtm_emissione IS NULL THEN 0 ELSE f.imponibile END) IS NULL,0,SUM(CASE WHEN f.dtm_emissione IS NULL THEN 0 ELSE f.imponibile END)) AS imponibile,
+                    IF(SUM(CASE WHEN f.dtm_emissione IS NULL THEN 0 ELSE f.totale END) IS NULL,0,SUM(CASE WHEN f.dtm_emissione IS NULL THEN 0 ELSE f.totale END)) AS totale,
+                    IF(SUM(CASE WHEN f.dtm_emissione IS NOT NULL THEN 0 ELSE f.iva END) IS NULL,0,SUM(CASE WHEN f.dtm_emissione IS NOT NULL THEN 0 ELSE f.iva END)) AS ivaNoRicevuta,
+                    IF(SUM(CASE WHEN f.dtm_emissione IS NOT NULL THEN 0 ELSE f.imponibile END) IS NULL,0,SUM(CASE WHEN f.dtm_emissione IS NOT NULL THEN 0 ELSE f.imponibile END)) AS imponibileNoRicevuta,
+                    IF(SUM(CASE WHEN f.dtm_emissione IS NOT NULL THEN 0 ELSE f.totale END) IS NULL,0,SUM(CASE WHEN f.dtm_emissione IS NOT NULL THEN 0 ELSE f.totale END)) AS totaleNoRicevuta,
+                    COUNT(*) AS numResults,
+                    IF( SUM(CASE WHEN f.dtm_emissione IS NULL THEN 0 ELSE 1 END) IS NULL,0,SUM(CASE WHEN f.dtm_emissione IS NULL THEN 0 ELSE 1 END)) AS numRicevute
+               FROM fatture f
+               WHERE 1=1
+            <if test="dataDa != null">
+                     AND date(if(f.dtm_emissione is null,f.dtm_modifica,f.dtm_emissione)) &gt;= #{dataDa}
+            </if>
+            <if test="dataA != null">
+                     AND date(if(f.dtm_emissione is null,f.dtm_modifica,f.dtm_emissione)) &lt;= #{dataA}
+            </if>
+	</select>
+        
+        <resultMap id="getRiepilogoVendutoResultMap" type="it.aesposito.jstore.bean.RiepilogoVenduto" >
+	  <result column="dataVendita" property="dtmVendita" jdbcType="TIMESTAMP" />
+          <result column="tipologia" property="tipologia" jdbcType="DOUBLE" />
+	  <result column="quantita" property="quantita" jdbcType="INTEGER" />
+          <result column="descrizione" property="descrizione" jdbcType="VARCHAR" />
+          <result column="costoAcquisto" property="costoAcquisto" jdbcType="DOUBLE" />
+          <result column="importo" property="importo" jdbcType="DOUBLE" />
+          <result column="guadagno" property="guadagno" jdbcType="DOUBLE" />
+          <result column="diffIva" property="diffIva" jdbcType="DOUBLE" />
+          <result column="guadagnoNetto" property="guadagnoNetto" jdbcType="DOUBLE" />
+	</resultMap>
+        
+        <select id="getRiepilogoVenduto" resultMap="getRiepilogoVendutoResultMap" parameterType="java.util.Map">
+         SELECT if(f.dtm_emissione is null,f.dtm_modifica,f.dtm_emissione) as dataVendita,
+                IF(a.tipologia_articolo = 1,'Prodotto','Prestazione') AS tipologia,
+                af.quantita,
+                a.descrizione,
+                if(a.tipologia_articolo = 1,((a.importo_unitario*af.quantita) * (1 + (a.iva/100))),0) AS costoAcquisto,
+                af.importo,
+                (af.importo - if(a.tipologia_articolo = 1,((a.importo_unitario*af.quantita) * (1 + (a.iva/100))),0)) AS guadagno,
+                (af.imponibile*(a.iva/100)) - if(a.tipologia_articolo = 1,((a.importo_unitario*af.quantita) *(a.iva/100)),0) AS diffIva,
+                (af.importo - if(a.tipologia_articolo = 1,((a.importo_unitario*af.quantita) * (1 + (a.iva/100))),0)) - ABS((af.imponibile*(a.iva/100)) - if(a.tipologia_articolo = 1,((a.importo_unitario*af.quantita) *(a.iva/100)),0)) AS guadagnoNetto
+           FROM articolo_fattura af
+           JOIN fatture f ON af.fattura = f.id
+           JOIN articoli a ON af.articolo = a.id
+          WHERE 1=1
+            <if test="dataDa != null">
+                AND date(if(f.dtm_emissione is null,f.dtm_modifica,f.dtm_emissione)) &gt;= #{dataDa}
+            </if>
+            <if test="dataA != null">
+                AND date(if(f.dtm_emissione is null,f.dtm_modifica,f.dtm_emissione)) &lt;= #{dataA}
+            </if>
+            <if test="categoria != null and categoria != -1">
+                AND a.categoria = #{categoria}
+            </if>
+            <if test="prodotti and prestazioni">
+                AND (a.tipologia_articolo = 1 OR a.tipologia_articolo = 2)
+            </if>
+            <if test="prodotti and not prestazioni">
+                AND a.tipologia_articolo = 1
+            </if>
+            <if test="not prodotti and prestazioni">
+                AND a.tipologia_articolo = 2
+            </if>
+            <if test="not prodotti and not prestazioni">
+                AND a.tipologia_articolo = -1
+            </if>
+                ORDER BY f.dtm_modifica desc
+            <if test="offset != -1 and limit != -1">
+                LIMIT #{offset},#{limit}
+            </if>
+        </select>
+        
+        <resultMap id="getSommarioVendutoResultMap" type="it.aesposito.jstore.bean.SommarioVenduto" >
+	  <result column="numeroProdotti" property="numeroProdotti" jdbcType="INTEGER" />
+          <result column="numeroPrestazioni" property="numeroPrestazioni" jdbcType="INTEGER" />
+          <result column="costoAcquistoTotale" property="costoAcquistoTotale" jdbcType="DOUBLE" />
+          <result column="prezzoVenditaTotale" property="prezzoVenditaTotale" jdbcType="DOUBLE" />
+          <result column="guadagnoTotale" property="guadagnoTotale" jdbcType="DOUBLE" />
+          <result column="diffIvaTotale" property="diffIvaTotale" jdbcType="DOUBLE" />
+          <result column="guadagnoNettoTotale" property="guadagnoNettoTotale" jdbcType="DOUBLE" />
+          <result column="numResults" property="numResults" jdbcType="INTEGER" />
+	</resultMap>
+        
+        <select id="getSommarioVenduto" resultMap="getSommarioVendutoResultMap" parameterType="java.util.Map">
+         SELECT if(SUM(CASE WHEN a.tipologia_articolo = 1 THEN af.quantita ELSE 0 END) is null,0,SUM(CASE WHEN a.tipologia_articolo = 1 THEN af.quantita ELSE 0 END)) AS numeroProdotti,
+                if(SUM(CASE WHEN a.tipologia_articolo = 2 THEN af.quantita ELSE 0 END) is null,0,SUM(CASE WHEN a.tipologia_articolo = 2 THEN af.quantita ELSE 0 END)) AS numeroPrestazioni,
+                if(SUM(IF(a.tipologia_articolo = 1,((a.importo_unitario*af.quantita) * (1 + (a.iva/100))),0)) is null,0,SUM(IF(a.tipologia_articolo = 1,((a.importo_unitario*af.quantita) * (1 + (a.iva/100))),0))) AS costoAcquistoTotale,
+                if(SUM(af.importo) is null,0,SUM(af.importo)) as prezzoVenditaTotale,
+                if(SUM((af.importo - IF(a.tipologia_articolo = 1,((a.importo_unitario*af.quantita) * (1 + (a.iva/100))),0))) is null,0,SUM((af.importo - IF(a.tipologia_articolo = 1,((a.importo_unitario*af.quantita) * (1 + (a.iva/100))),0)))) AS guadagnoTotale,
+                if(SUM((af.imponibile*(a.iva/100)) - IF(a.tipologia_articolo = 1,((a.importo_unitario*af.quantita) *(a.iva/100)),0)) is null,0,SUM((af.imponibile*(a.iva/100)) - IF(a.tipologia_articolo = 1,((a.importo_unitario*af.quantita) *(a.iva/100)),0))) AS diffIvaTotale,
+                if(SUM((af.importo - IF(a.tipologia_articolo = 1,((a.importo_unitario*af.quantita) * (1 + (a.iva/100))),0)) - ABS((af.imponibile*(a.iva/100)) - IF(a.tipologia_articolo = 1,((a.importo_unitario*af.quantita) *(a.iva/100)),0))) is null,0,SUM((af.importo - IF(a.tipologia_articolo = 1,((a.importo_unitario*af.quantita) * (1 + (a.iva/100))),0)) - ABS((af.imponibile*(a.iva/100)) - IF(a.tipologia_articolo = 1,((a.importo_unitario*af.quantita) *(a.iva/100)),0)))) AS guadagnoNettoTotale,
+                COUNT(*) AS numResults
+           FROM articolo_fattura af
+           JOIN fatture f ON af.fattura = f.id
+           JOIN articoli a ON af.articolo = a.id
+          WHERE 1=1
+            <if test="dataDa != null">
+                AND date(if(f.dtm_emissione is null,f.dtm_modifica,f.dtm_emissione)) &gt;= #{dataDa}
+            </if>
+            <if test="dataA != null">
+                AND date(if(f.dtm_emissione is null,f.dtm_modifica,f.dtm_emissione)) &lt;= #{dataA}
+            </if>
+            <if test="categoria != null and categoria != -1">
+                AND a.categoria = #{categoria}
+            </if>
+            <if test="prodotti and prestazioni">
+                AND (a.tipologia_articolo = 1 OR a.tipologia_articolo = 2)
+            </if>
+            <if test="prodotti and not prestazioni">
+                AND a.tipologia_articolo = 1
+            </if>
+            <if test="not prodotti and prestazioni">
+                AND a.tipologia_articolo = 2
+            </if>
+            <if test="not prodotti and not prestazioni">
+                AND a.tipologia_articolo = -1
+            </if>
+        </select>
+</mapper>

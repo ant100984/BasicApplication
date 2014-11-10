@@ -1,0 +1,297 @@
+2014-02-26 21:35:31,812 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-26 21:35:33,781 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 21:35:36,625 [main] DEBUG it.aesposito.ritirotarghe.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@18176076 (XID = 35604), (SESSIONID = 1), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 21:35:36,656 [main] DEBUG it.aesposito.ritirotarghe.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select ID, NOME, VALORE from ROOT.APPLICATION_PROPERTIES WHERE ( NOME = ? ) 
+2014-02-26 21:35:37,750 [main] DEBUG it.aesposito.ritirotarghe.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: theme(String)
+2014-02-26 21:35:48,484 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 21:35:48,484 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@12848250 (XID = 35608), (SESSIONID = 3), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 21:35:48,515 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==>  Preparing: select ID, NOME, COGNOME, INDIRIZZO, CAP, COMUNE, PROVINCIA, NUM_PROT, DATA_PROT, TARGA, NUM_NOTA, DATA_NOTA, COMUNE_COMANDO, DTM_COMPILAZIONE from ROOT.RITIRI order by dtm_compilazione desc 
+2014-02-26 21:35:48,656 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==> Parameters: 
+2014-02-26 21:35:51,531 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 21:35:51,531 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@15225576 (XID = 35612), (SESSIONID = 5), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 21:35:51,531 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==>  Preparing: select ID, NOME, COGNOME, INDIRIZZO, CAP, COMUNE, PROVINCIA, NUM_PROT, DATA_PROT, TARGA, NUM_NOTA, DATA_NOTA, COMUNE_COMANDO, DTM_COMPILAZIONE from ROOT.RITIRI order by dtm_compilazione desc 
+2014-02-26 21:35:51,531 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==> Parameters: 
+2014-02-26 21:36:56,031 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-26 21:36:57,375 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 21:36:59,078 [main] DEBUG it.aesposito.ritirotarghe.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@22398443 (XID = 35604), (SESSIONID = 1), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 21:36:59,109 [main] DEBUG it.aesposito.ritirotarghe.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select ID, NOME, VALORE from ROOT.APPLICATION_PROPERTIES WHERE ( NOME = ? ) 
+2014-02-26 21:37:00,078 [main] DEBUG it.aesposito.ritirotarghe.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: theme(String)
+2014-02-26 21:37:08,343 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 21:37:08,343 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@9930720 (XID = 35608), (SESSIONID = 3), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 21:37:08,343 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==>  Preparing: select ID, NOME, COGNOME, INDIRIZZO, CAP, COMUNE, PROVINCIA, NUM_PROT, DATA_PROT, TARGA, NUM_NOTA, DATA_NOTA, COMUNE_COMANDO, DTM_COMPILAZIONE from ROOT.RITIRI order by dtm_compilazione desc 
+2014-02-26 21:37:08,406 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==> Parameters: 
+2014-02-26 21:37:44,203 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-26 21:37:45,609 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 21:37:47,312 [main] DEBUG it.aesposito.ritirotarghe.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@6631245 (XID = 35604), (SESSIONID = 1), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 21:37:47,343 [main] DEBUG it.aesposito.ritirotarghe.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select ID, NOME, VALORE from ROOT.APPLICATION_PROPERTIES WHERE ( NOME = ? ) 
+2014-02-26 21:37:48,328 [main] DEBUG it.aesposito.ritirotarghe.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: theme(String)
+2014-02-26 21:37:52,234 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 21:37:52,234 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@24559633 (XID = 35608), (SESSIONID = 3), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 21:37:52,234 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==>  Preparing: select ID, NOME, COGNOME, INDIRIZZO, CAP, COMUNE, PROVINCIA, NUM_PROT, DATA_PROT, TARGA, NUM_NOTA, DATA_NOTA, COMUNE_COMANDO, DTM_COMPILAZIONE from ROOT.RITIRI order by dtm_compilazione desc 
+2014-02-26 21:37:52,312 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==> Parameters: 
+2014-02-26 21:37:54,953 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 21:37:54,968 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@734305 (XID = 35612), (SESSIONID = 5), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 21:37:54,968 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==>  Preparing: select ID, NOME, COGNOME, INDIRIZZO, CAP, COMUNE, PROVINCIA, NUM_PROT, DATA_PROT, TARGA, NUM_NOTA, DATA_NOTA, COMUNE_COMANDO, DTM_COMPILAZIONE from ROOT.RITIRI order by dtm_compilazione desc 
+2014-02-26 21:37:54,968 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==> Parameters: 
+2014-02-26 21:38:01,375 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 21:38:01,375 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@7969029 (XID = 35615), (SESSIONID = 7), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 21:38:01,375 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==>  Preparing: select ID, NOME, COGNOME, INDIRIZZO, CAP, COMUNE, PROVINCIA, NUM_PROT, DATA_PROT, TARGA, NUM_NOTA, DATA_NOTA, COMUNE_COMANDO, DTM_COMPILAZIONE from ROOT.RITIRI WHERE ( DTM_COMPILAZIONE >= ? ) order by dtm_compilazione desc 
+2014-02-26 21:38:01,406 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==> Parameters: 2014-02-03 00:00:00.0(Timestamp)
+2014-02-26 21:38:24,531 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-26 21:38:26,312 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 21:38:28,515 [main] DEBUG it.aesposito.ritirotarghe.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@16508388 (XID = 35604), (SESSIONID = 1), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 21:38:28,546 [main] DEBUG it.aesposito.ritirotarghe.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select ID, NOME, VALORE from ROOT.APPLICATION_PROPERTIES WHERE ( NOME = ? ) 
+2014-02-26 21:38:29,656 [main] DEBUG it.aesposito.ritirotarghe.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: theme(String)
+2014-02-26 21:38:46,750 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 21:38:46,765 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@10885617 (XID = 35608), (SESSIONID = 3), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 21:38:46,781 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==>  Preparing: select ID, NOME, COGNOME, INDIRIZZO, CAP, COMUNE, PROVINCIA, NUM_PROT, DATA_PROT, TARGA, NUM_NOTA, DATA_NOTA, COMUNE_COMANDO, DTM_COMPILAZIONE from ROOT.RITIRI order by dtm_compilazione desc 
+2014-02-26 21:38:47,218 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==> Parameters: 
+2014-02-26 21:45:36,125 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-26 21:45:37,593 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 21:45:39,765 [main] DEBUG it.aesposito.ritirotarghe.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@6320016 (XID = 35604), (SESSIONID = 1), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 21:45:39,796 [main] DEBUG it.aesposito.ritirotarghe.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select ID, NOME, VALORE from ROOT.APPLICATION_PROPERTIES WHERE ( NOME = ? ) 
+2014-02-26 21:45:40,890 [main] DEBUG it.aesposito.ritirotarghe.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: theme(String)
+2014-02-26 21:45:47,187 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 21:45:47,187 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@16719040 (XID = 35608), (SESSIONID = 3), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 21:45:47,187 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==>  Preparing: select ID, NOME, COGNOME, INDIRIZZO, CAP, COMUNE, PROVINCIA, NUM_PROT, DATA_PROT, TARGA, NUM_NOTA, DATA_NOTA, COMUNE_COMANDO, DTM_COMPILAZIONE from ROOT.RITIRI order by dtm_compilazione desc 
+2014-02-26 21:45:47,281 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==> Parameters: 
+2014-02-26 21:50:13,500 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-26 21:50:14,953 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 21:50:17,093 [main] DEBUG it.aesposito.ritirotarghe.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@16306036 (XID = 35604), (SESSIONID = 1), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 21:50:17,125 [main] DEBUG it.aesposito.ritirotarghe.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select ID, NOME, VALORE from ROOT.APPLICATION_PROPERTIES WHERE ( NOME = ? ) 
+2014-02-26 21:50:18,203 [main] DEBUG it.aesposito.ritirotarghe.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: theme(String)
+2014-02-26 21:51:26,390 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 21:51:26,406 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@12870165 (XID = 35608), (SESSIONID = 3), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 21:51:26,421 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==>  Preparing: select ID, NOME, COGNOME, INDIRIZZO, CAP, COMUNE, PROVINCIA, NUM_PROT, DATA_PROT, TARGA, NUM_NOTA, DATA_NOTA, COMUNE_COMANDO, DTM_COMPILAZIONE from ROOT.RITIRI order by dtm_compilazione desc 
+2014-02-26 21:51:26,843 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==> Parameters: 
+2014-02-26 21:55:04,250 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-26 21:55:05,609 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 21:55:07,281 [main] DEBUG it.aesposito.ritirotarghe.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@3470885 (XID = 35604), (SESSIONID = 1), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 21:55:07,312 [main] DEBUG it.aesposito.ritirotarghe.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select ID, NOME, VALORE from ROOT.APPLICATION_PROPERTIES WHERE ( NOME = ? ) 
+2014-02-26 21:55:08,296 [main] DEBUG it.aesposito.ritirotarghe.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: theme(String)
+2014-02-26 21:55:12,406 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 21:55:12,406 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@21695188 (XID = 35608), (SESSIONID = 3), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 21:55:12,406 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==>  Preparing: select ID, NOME, COGNOME, INDIRIZZO, CAP, COMUNE, PROVINCIA, NUM_PROT, DATA_PROT, TARGA, NUM_NOTA, DATA_NOTA, COMUNE_COMANDO, DTM_COMPILAZIONE from ROOT.RITIRI order by dtm_compilazione desc 
+2014-02-26 21:55:12,484 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==> Parameters: 
+2014-02-26 21:55:19,031 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 21:55:19,031 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@25565528 (XID = 35612), (SESSIONID = 5), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 21:55:19,031 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==>  Preparing: select ID, NOME, COGNOME, INDIRIZZO, CAP, COMUNE, PROVINCIA, NUM_PROT, DATA_PROT, TARGA, NUM_NOTA, DATA_NOTA, COMUNE_COMANDO, DTM_COMPILAZIONE from ROOT.RITIRI order by dtm_compilazione desc 
+2014-02-26 21:55:19,031 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==> Parameters: 
+2014-02-26 21:55:19,906 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 21:55:19,906 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@16377239 (XID = 35615), (SESSIONID = 7), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 21:55:19,906 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==>  Preparing: select ID, NOME, COGNOME, INDIRIZZO, CAP, COMUNE, PROVINCIA, NUM_PROT, DATA_PROT, TARGA, NUM_NOTA, DATA_NOTA, COMUNE_COMANDO, DTM_COMPILAZIONE from ROOT.RITIRI order by dtm_compilazione desc 
+2014-02-26 21:55:19,906 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==> Parameters: 
+2014-02-26 21:55:20,531 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 21:55:20,546 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@32690327 (XID = 35618), (SESSIONID = 9), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 21:55:20,546 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==>  Preparing: select ID, NOME, COGNOME, INDIRIZZO, CAP, COMUNE, PROVINCIA, NUM_PROT, DATA_PROT, TARGA, NUM_NOTA, DATA_NOTA, COMUNE_COMANDO, DTM_COMPILAZIONE from ROOT.RITIRI order by dtm_compilazione desc 
+2014-02-26 21:55:20,546 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==> Parameters: 
+2014-02-26 21:55:21,218 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 21:55:21,234 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@6169682 (XID = 35621), (SESSIONID = 11), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 21:55:21,234 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==>  Preparing: select ID, NOME, COGNOME, INDIRIZZO, CAP, COMUNE, PROVINCIA, NUM_PROT, DATA_PROT, TARGA, NUM_NOTA, DATA_NOTA, COMUNE_COMANDO, DTM_COMPILAZIONE from ROOT.RITIRI order by dtm_compilazione desc 
+2014-02-26 21:55:21,234 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==> Parameters: 
+2014-02-26 21:55:22,203 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 21:55:22,218 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@24866568 (XID = 35624), (SESSIONID = 13), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 21:55:22,218 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==>  Preparing: select ID, NOME, COGNOME, INDIRIZZO, CAP, COMUNE, PROVINCIA, NUM_PROT, DATA_PROT, TARGA, NUM_NOTA, DATA_NOTA, COMUNE_COMANDO, DTM_COMPILAZIONE from ROOT.RITIRI order by dtm_compilazione desc 
+2014-02-26 21:55:22,218 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==> Parameters: 
+2014-02-26 21:55:23,156 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 21:55:23,156 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@23253727 (XID = 35627), (SESSIONID = 15), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 21:55:23,171 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==>  Preparing: select ID, NOME, COGNOME, INDIRIZZO, CAP, COMUNE, PROVINCIA, NUM_PROT, DATA_PROT, TARGA, NUM_NOTA, DATA_NOTA, COMUNE_COMANDO, DTM_COMPILAZIONE from ROOT.RITIRI order by dtm_compilazione desc 
+2014-02-26 21:55:23,171 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==> Parameters: 
+2014-02-26 21:55:25,281 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 21:55:25,296 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@19833813 (XID = 35630), (SESSIONID = 17), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 21:55:25,296 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==>  Preparing: select ID, NOME, COGNOME, INDIRIZZO, CAP, COMUNE, PROVINCIA, NUM_PROT, DATA_PROT, TARGA, NUM_NOTA, DATA_NOTA, COMUNE_COMANDO, DTM_COMPILAZIONE from ROOT.RITIRI order by dtm_compilazione desc 
+2014-02-26 21:55:25,296 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==> Parameters: 
+2014-02-26 21:55:25,781 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 21:55:25,781 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@9125419 (XID = 35633), (SESSIONID = 19), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 21:55:25,781 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==>  Preparing: select ID, NOME, COGNOME, INDIRIZZO, CAP, COMUNE, PROVINCIA, NUM_PROT, DATA_PROT, TARGA, NUM_NOTA, DATA_NOTA, COMUNE_COMANDO, DTM_COMPILAZIONE from ROOT.RITIRI order by dtm_compilazione desc 
+2014-02-26 21:55:25,781 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==> Parameters: 
+2014-02-26 21:55:27,203 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 21:55:27,218 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@30982712 (XID = 35636), (SESSIONID = 21), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 21:55:27,218 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==>  Preparing: select ID, NOME, COGNOME, INDIRIZZO, CAP, COMUNE, PROVINCIA, NUM_PROT, DATA_PROT, TARGA, NUM_NOTA, DATA_NOTA, COMUNE_COMANDO, DTM_COMPILAZIONE from ROOT.RITIRI order by dtm_compilazione desc 
+2014-02-26 21:55:27,218 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==> Parameters: 
+2014-02-26 21:55:27,687 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 21:55:27,687 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@32934553 (XID = 35639), (SESSIONID = 23), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 21:55:27,687 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==>  Preparing: select ID, NOME, COGNOME, INDIRIZZO, CAP, COMUNE, PROVINCIA, NUM_PROT, DATA_PROT, TARGA, NUM_NOTA, DATA_NOTA, COMUNE_COMANDO, DTM_COMPILAZIONE from ROOT.RITIRI order by dtm_compilazione desc 
+2014-02-26 21:55:27,687 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==> Parameters: 
+2014-02-26 21:56:36,796 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-26 21:56:38,234 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 21:56:40,343 [main] DEBUG it.aesposito.ritirotarghe.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@10944665 (XID = 35604), (SESSIONID = 1), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 21:56:40,375 [main] DEBUG it.aesposito.ritirotarghe.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select ID, NOME, VALORE from ROOT.APPLICATION_PROPERTIES WHERE ( NOME = ? ) 
+2014-02-26 21:56:41,515 [main] DEBUG it.aesposito.ritirotarghe.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: theme(String)
+2014-02-26 21:56:48,359 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 21:56:48,359 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@4166820 (XID = 35608), (SESSIONID = 3), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 21:56:48,359 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==>  Preparing: select ID, NOME, COGNOME, INDIRIZZO, CAP, COMUNE, PROVINCIA, NUM_PROT, DATA_PROT, TARGA, NUM_NOTA, DATA_NOTA, COMUNE_COMANDO, DTM_COMPILAZIONE from ROOT.RITIRI order by dtm_compilazione desc 
+2014-02-26 21:56:48,453 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==> Parameters: 
+2014-02-26 22:00:21,734 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-26 22:00:23,078 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 22:00:24,734 [main] DEBUG it.aesposito.ritirotarghe.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@3019973 (XID = 35604), (SESSIONID = 1), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 22:00:24,781 [main] DEBUG it.aesposito.ritirotarghe.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select ID, NOME, VALORE from ROOT.APPLICATION_PROPERTIES WHERE ( NOME = ? ) 
+2014-02-26 22:00:25,734 [main] DEBUG it.aesposito.ritirotarghe.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: theme(String)
+2014-02-26 22:00:35,562 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 22:00:35,562 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@27774361 (XID = 35608), (SESSIONID = 3), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 22:00:35,562 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==>  Preparing: select ID, NOME, COGNOME, INDIRIZZO, CAP, COMUNE, PROVINCIA, NUM_PROT, DATA_PROT, TARGA, NUM_NOTA, DATA_NOTA, COMUNE_COMANDO, DTM_COMPILAZIONE from ROOT.RITIRI order by dtm_compilazione desc 
+2014-02-26 22:00:35,625 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==> Parameters: 
+2014-02-26 22:00:40,187 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 22:00:40,187 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@10905661 (XID = 35612), (SESSIONID = 5), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 22:00:40,187 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==>  Preparing: select ID, NOME, COGNOME, INDIRIZZO, CAP, COMUNE, PROVINCIA, NUM_PROT, DATA_PROT, TARGA, NUM_NOTA, DATA_NOTA, COMUNE_COMANDO, DTM_COMPILAZIONE from ROOT.RITIRI order by dtm_compilazione desc 
+2014-02-26 22:00:40,187 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==> Parameters: 
+2014-02-26 22:00:46,296 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 22:00:46,296 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@25435448 (XID = 35615), (SESSIONID = 7), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 22:00:46,296 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==>  Preparing: select ID, NOME, COGNOME, INDIRIZZO, CAP, COMUNE, PROVINCIA, NUM_PROT, DATA_PROT, TARGA, NUM_NOTA, DATA_NOTA, COMUNE_COMANDO, DTM_COMPILAZIONE from ROOT.RITIRI WHERE ( DTM_COMPILAZIONE >= ? ) order by dtm_compilazione desc 
+2014-02-26 22:00:46,343 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==> Parameters: 2014-02-22 00:00:00.0(Timestamp)
+2014-02-26 22:00:47,906 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 22:00:47,906 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@31406827 (XID = 35619), (SESSIONID = 9), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 22:00:47,906 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==>  Preparing: select ID, NOME, COGNOME, INDIRIZZO, CAP, COMUNE, PROVINCIA, NUM_PROT, DATA_PROT, TARGA, NUM_NOTA, DATA_NOTA, COMUNE_COMANDO, DTM_COMPILAZIONE from ROOT.RITIRI WHERE ( DTM_COMPILAZIONE >= ? ) order by dtm_compilazione desc 
+2014-02-26 22:00:47,906 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==> Parameters: 2014-02-22 00:00:00.0(Timestamp)
+2014-02-26 22:00:48,890 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 22:00:48,890 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@2742317 (XID = 35622), (SESSIONID = 11), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 22:00:48,890 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==>  Preparing: select ID, NOME, COGNOME, INDIRIZZO, CAP, COMUNE, PROVINCIA, NUM_PROT, DATA_PROT, TARGA, NUM_NOTA, DATA_NOTA, COMUNE_COMANDO, DTM_COMPILAZIONE from ROOT.RITIRI WHERE ( DTM_COMPILAZIONE >= ? ) order by dtm_compilazione desc 
+2014-02-26 22:00:48,890 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==> Parameters: 2014-02-22 00:00:00.0(Timestamp)
+2014-02-26 22:00:49,062 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 22:00:49,078 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@2809095 (XID = 35625), (SESSIONID = 13), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 22:00:49,078 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==>  Preparing: select ID, NOME, COGNOME, INDIRIZZO, CAP, COMUNE, PROVINCIA, NUM_PROT, DATA_PROT, TARGA, NUM_NOTA, DATA_NOTA, COMUNE_COMANDO, DTM_COMPILAZIONE from ROOT.RITIRI WHERE ( DTM_COMPILAZIONE >= ? ) order by dtm_compilazione desc 
+2014-02-26 22:00:49,078 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==> Parameters: 2014-02-22 00:00:00.0(Timestamp)
+2014-02-26 22:00:49,250 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 22:00:49,250 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@23780896 (XID = 35628), (SESSIONID = 15), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 22:00:49,250 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==>  Preparing: select ID, NOME, COGNOME, INDIRIZZO, CAP, COMUNE, PROVINCIA, NUM_PROT, DATA_PROT, TARGA, NUM_NOTA, DATA_NOTA, COMUNE_COMANDO, DTM_COMPILAZIONE from ROOT.RITIRI WHERE ( DTM_COMPILAZIONE >= ? ) order by dtm_compilazione desc 
+2014-02-26 22:00:49,250 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==> Parameters: 2014-02-22 00:00:00.0(Timestamp)
+2014-02-26 22:00:49,421 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 22:00:49,421 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@20606668 (XID = 35631), (SESSIONID = 17), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 22:00:49,421 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==>  Preparing: select ID, NOME, COGNOME, INDIRIZZO, CAP, COMUNE, PROVINCIA, NUM_PROT, DATA_PROT, TARGA, NUM_NOTA, DATA_NOTA, COMUNE_COMANDO, DTM_COMPILAZIONE from ROOT.RITIRI WHERE ( DTM_COMPILAZIONE >= ? ) order by dtm_compilazione desc 
+2014-02-26 22:00:49,421 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==> Parameters: 2014-02-22 00:00:00.0(Timestamp)
+2014-02-26 22:00:49,625 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 22:00:49,625 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@13058410 (XID = 35634), (SESSIONID = 19), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 22:00:49,625 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==>  Preparing: select ID, NOME, COGNOME, INDIRIZZO, CAP, COMUNE, PROVINCIA, NUM_PROT, DATA_PROT, TARGA, NUM_NOTA, DATA_NOTA, COMUNE_COMANDO, DTM_COMPILAZIONE from ROOT.RITIRI WHERE ( DTM_COMPILAZIONE >= ? ) order by dtm_compilazione desc 
+2014-02-26 22:00:49,625 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==> Parameters: 2014-02-22 00:00:00.0(Timestamp)
+2014-02-26 22:00:54,109 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 22:00:54,109 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@17429391 (XID = 35637), (SESSIONID = 21), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 22:00:54,109 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==>  Preparing: select ID, NOME, COGNOME, INDIRIZZO, CAP, COMUNE, PROVINCIA, NUM_PROT, DATA_PROT, TARGA, NUM_NOTA, DATA_NOTA, COMUNE_COMANDO, DTM_COMPILAZIONE from ROOT.RITIRI WHERE ( DTM_COMPILAZIONE >= ? ) order by dtm_compilazione desc 
+2014-02-26 22:00:54,109 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==> Parameters: 2014-02-23 00:00:00.0(Timestamp)
+2014-02-26 22:02:20,734 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-26 22:02:22,078 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 22:02:23,765 [main] DEBUG it.aesposito.ritirotarghe.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@3019973 (XID = 35604), (SESSIONID = 1), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 22:02:23,796 [main] DEBUG it.aesposito.ritirotarghe.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select ID, NOME, VALORE from ROOT.APPLICATION_PROPERTIES WHERE ( NOME = ? ) 
+2014-02-26 22:02:24,765 [main] DEBUG it.aesposito.ritirotarghe.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: theme(String)
+2014-02-26 22:02:28,328 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 22:02:28,328 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@1025794 (XID = 35608), (SESSIONID = 3), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 22:02:28,328 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==>  Preparing: select ID, NOME, COGNOME, INDIRIZZO, CAP, COMUNE, PROVINCIA, NUM_PROT, DATA_PROT, TARGA, NUM_NOTA, DATA_NOTA, COMUNE_COMANDO, DTM_COMPILAZIONE from ROOT.RITIRI order by dtm_compilazione desc 
+2014-02-26 22:02:28,406 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==> Parameters: 
+2014-02-26 22:03:20,296 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-26 22:03:21,671 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 22:03:27,484 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 22:03:28,187 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@97386 (XID = 35604), (SESSIONID = 1), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 22:03:28,218 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==>  Preparing: select ID, NOME, COGNOME, INDIRIZZO, CAP, COMUNE, PROVINCIA, NUM_PROT, DATA_PROT, TARGA, NUM_NOTA, DATA_NOTA, COMUNE_COMANDO, DTM_COMPILAZIONE from ROOT.RITIRI order by dtm_compilazione desc 
+2014-02-26 22:03:29,390 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==> Parameters: 
+2014-02-26 22:03:35,078 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-26 22:03:36,421 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 22:03:38,078 [main] DEBUG it.aesposito.ritirotarghe.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@22398443 (XID = 35604), (SESSIONID = 1), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 22:03:38,109 [main] DEBUG it.aesposito.ritirotarghe.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select ID, NOME, VALORE from ROOT.APPLICATION_PROPERTIES WHERE ( NOME = ? ) 
+2014-02-26 22:03:39,062 [main] DEBUG it.aesposito.ritirotarghe.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: theme(String)
+2014-02-26 22:03:48,718 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 22:03:48,718 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@360619 (XID = 35608), (SESSIONID = 3), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 22:03:48,718 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==>  Preparing: select ID, NOME, COGNOME, INDIRIZZO, CAP, COMUNE, PROVINCIA, NUM_PROT, DATA_PROT, TARGA, NUM_NOTA, DATA_NOTA, COMUNE_COMANDO, DTM_COMPILAZIONE from ROOT.RITIRI order by dtm_compilazione desc 
+2014-02-26 22:03:48,796 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==> Parameters: 
+2014-02-26 22:03:51,281 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 22:03:51,296 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.ComuniMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@16659228 (XID = 35612), (SESSIONID = 5), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 22:03:51,296 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.ComuniMapper.selectByExample - ==>  Preparing: select ID, NOME, PROVINCIA, CAP, PREFISSOTEL, CODICEISTAT, CODICECATASTALE from ROOT.COMUNI 
+2014-02-26 22:03:51,343 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.ComuniMapper.selectByExample - ==> Parameters: 
+2014-02-26 22:03:53,109 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 22:03:53,109 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByPrimaryKey - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@228056 (XID = 35616), (SESSIONID = 7), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 22:03:53,109 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByPrimaryKey - ==>  Preparing: select ID, NOME, COGNOME, INDIRIZZO, CAP, COMUNE, PROVINCIA, NUM_PROT, DATA_PROT, TARGA, NUM_NOTA, DATA_NOTA, COMUNE_COMANDO, DTM_COMPILAZIONE from ROOT.RITIRI where ID = ? 
+2014-02-26 22:03:53,250 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByPrimaryKey - ==> Parameters: 1(Integer)
+2014-02-26 22:03:59,375 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 22:03:59,375 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.updateByPrimaryKey - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@2413777 (XID = 35620), (SESSIONID = 9), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 22:03:59,375 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.updateByPrimaryKey - ==>  Preparing: update ROOT.RITIRI set NOME = ?, COGNOME = ?, INDIRIZZO = ?, CAP = ?, COMUNE = ?, PROVINCIA = ?, NUM_PROT = ?, DATA_PROT = ?, TARGA = ?, NUM_NOTA = ?, DATA_NOTA = ?, COMUNE_COMANDO = ?, DTM_COMPILAZIONE = ? where ID = ? 
+2014-02-26 22:03:59,609 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.updateByPrimaryKey - ==> Parameters: antonio(String), esposito(String), via roma 236(String), 82037(String), TELESE TERME(String), BN(String), 123(String), 2014-02-22 00:00:00.0(Timestamp), ed832sv(String), 12345(String), 2014-02-22 00:00:00.0(Timestamp), TELESE TERME(String), 2014-02-22 00:00:00.0(Timestamp), 1(Integer)
+2014-02-26 22:03:59,640 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [org.apache.derby.impl.jdbc.EmbedConnection40@2413777 (XID = 35620), (SESSIONID = 9), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 22:03:59,640 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [org.apache.derby.impl.jdbc.EmbedConnection40@2413777 (XID = 35620), (SESSIONID = 9), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 22:03:59,640 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [org.apache.derby.impl.jdbc.EmbedConnection40@2413777 (XID = 35620), (SESSIONID = 9), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 22:03:59,656 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 22:03:59,656 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@15733111 (XID = 35624), (SESSIONID = 11), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 22:03:59,656 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==>  Preparing: select ID, NOME, COGNOME, INDIRIZZO, CAP, COMUNE, PROVINCIA, NUM_PROT, DATA_PROT, TARGA, NUM_NOTA, DATA_NOTA, COMUNE_COMANDO, DTM_COMPILAZIONE from ROOT.RITIRI order by dtm_compilazione desc 
+2014-02-26 22:03:59,656 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==> Parameters: 
+2014-02-26 22:04:02,187 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 22:04:02,187 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@18439518 (XID = 35627), (SESSIONID = 13), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 22:04:02,187 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==>  Preparing: select ID, NOME, COGNOME, INDIRIZZO, CAP, COMUNE, PROVINCIA, NUM_PROT, DATA_PROT, TARGA, NUM_NOTA, DATA_NOTA, COMUNE_COMANDO, DTM_COMPILAZIONE from ROOT.RITIRI order by dtm_compilazione desc 
+2014-02-26 22:04:02,187 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByExample - ==> Parameters: 
+2014-02-26 22:04:03,296 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 22:04:03,296 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.ComuniMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@19114838 (XID = 35630), (SESSIONID = 15), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 22:04:03,296 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.ComuniMapper.selectByExample - ==>  Preparing: select ID, NOME, PROVINCIA, CAP, PREFISSOTEL, CODICEISTAT, CODICECATASTALE from ROOT.COMUNI 
+2014-02-26 22:04:03,296 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.ComuniMapper.selectByExample - ==> Parameters: 
+2014-02-26 22:04:04,390 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 22:04:04,390 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByPrimaryKey - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@6488584 (XID = 35633), (SESSIONID = 17), (DATABASE = DB), (DRDAID = null) ]
+2014-02-26 22:04:04,390 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByPrimaryKey - ==>  Preparing: select ID, NOME, COGNOME, INDIRIZZO, CAP, COMUNE, PROVINCIA, NUM_PROT, DATA_PROT, TARGA, NUM_NOTA, DATA_NOTA, COMUNE_COMANDO, DTM_COMPILAZIONE from ROOT.RITIRI where ID = ? 
+2014-02-26 22:04:04,390 [AWT-EventQueue-0] DEBUG it.aesposito.ritirotarghe.dao.RitiriMapper.selectByPrimaryKey - ==> Parameters: 3(Integer)
+2014-02-26 22:36:59,375 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-26 22:37:34,125 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-26 22:48:54,203 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-26 22:50:17,203 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-26 22:53:47,562 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-26 22:57:04,046 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-26 22:57:59,062 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-26 22:59:22,406 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-26 23:06:00,984 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-26 23:10:43,359 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 23:10:44,218 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@6587715 (XID = 1382), (SESSIONID = 1), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-26 23:10:44,265 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ==>  Preparing: select case when max(id)+1 IS NULL then 1 else max(id)+1 end as nextVal from articoli 
+2014-02-26 23:10:45,328 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ==> Parameters: 
+2014-02-26 23:13:28,609 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-26 23:14:36,328 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 23:14:37,140 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@12543717 (XID = 1382), (SESSIONID = 1), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-26 23:14:37,187 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ==>  Preparing: select case when max(id)+1 IS NULL then 1 else max(id)+1 end as nextVal from articoli 
+2014-02-26 23:14:38,234 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ==> Parameters: 
+2014-02-26 23:14:56,421 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-26 23:15:37,203 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 23:15:38,296 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@29179191 (XID = 1382), (SESSIONID = 1), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-26 23:15:38,359 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ==>  Preparing: select case when max(id)+1 IS NULL then 1 else max(id)+1 end as nextVal from articoli 
+2014-02-26 23:15:39,593 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ==> Parameters: 
+2014-02-26 23:17:52,890 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-26 23:20:58,484 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 23:20:59,718 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@9939230 (XID = 1382), (SESSIONID = 1), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-26 23:20:59,781 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ==>  Preparing: select case when max(id)+1 IS NULL then 1 else max(id)+1 end as nextVal from articoli 
+2014-02-26 23:21:01,031 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ==> Parameters: 
+2014-02-26 23:38:45,187 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-26 23:39:32,656 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 23:39:33,468 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@10785369 (XID = 1382), (SESSIONID = 1), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-26 23:39:33,515 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ==>  Preparing: select case when max(id)+1 IS NULL then 1 else max(id)+1 end as nextVal from articoli 
+2014-02-26 23:39:34,562 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ==> Parameters: 
+2014-02-26 23:40:44,734 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-26 23:41:00,062 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 23:41:00,875 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@9727205 (XID = 1382), (SESSIONID = 1), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-26 23:41:00,921 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ==>  Preparing: select case when max(id)+1 IS NULL then 1 else max(id)+1 end as nextVal from articoli 
+2014-02-26 23:41:02,156 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ==> Parameters: 
+2014-02-26 23:41:02,359 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 23:41:02,375 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.insertSelective - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@26381188 (XID = 1386), (SESSIONID = 3), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-26 23:41:02,375 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.insertSelective - ==>  Preparing: insert into JSTORE.ARTICOLI ( ID, QUANTITA, CODICE, DESCRIZIONE_BREVE, NOTE, SCARSITA, IMPORTO_UNITARIO ) values ( ?, ?, ?, ?, ?, ?, ? ) 
+2014-02-26 23:41:02,531 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.insertSelective - ==> Parameters: 1(Integer), 3453(Integer), 345345(String), 345(String), 345345(String), 345(Integer), 53453.0(Double)
+2014-02-26 23:43:41,671 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-26 23:44:07,906 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 23:44:08,765 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@3466877 (XID = 1382), (SESSIONID = 1), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-26 23:44:08,812 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ==>  Preparing: select case when max(id)+1 IS NULL then 1 else max(id)+1 end as nextVal from articoli 
+2014-02-26 23:44:10,031 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ==> Parameters: 
+2014-02-26 23:44:10,250 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 23:44:10,250 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.insertSelective - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@9943936 (XID = 1386), (SESSIONID = 3), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-26 23:44:10,250 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.insertSelective - ==>  Preparing: insert into JSTORE.ARTICOLI ( ID, QUANTITA, CODICE, DESCRIZIONE_BREVE, NOTE, SCARSITA, IMPORTO_UNITARIO ) values ( ?, ?, ?, ?, ?, ?, ? ) 
+2014-02-26 23:44:10,406 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.insertSelective - ==> Parameters: 1(Integer), 234(Integer), 234234(String), 234(String), 23423(String), 2342(Integer), 234.0(Double)
+2014-02-26 23:44:39,171 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-26 23:44:56,843 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 23:44:57,687 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@29460832 (XID = 1382), (SESSIONID = 1), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-26 23:44:57,718 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ==>  Preparing: select case when max(id)+1 IS NULL then 1 else max(id)+1 end as nextVal from articoli 
+2014-02-26 23:44:58,953 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ==> Parameters: 
+2014-02-26 23:44:59,156 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 23:44:59,156 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.insertSelective - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@30875571 (XID = 1386), (SESSIONID = 3), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-26 23:44:59,156 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.insertSelective - ==>  Preparing: insert into JSTORE.ARTICOLI ( ID, TIPOLOGIA_ARTICOLO, QUANTITA, CODICE, DESCRIZIONE_BREVE, NOTE, SCARSITA, IMPORTO_UNITARIO ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2014-02-26 23:44:59,296 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.insertSelective - ==> Parameters: 1(Integer), 2(Integer), 423(Integer), 2132231(String), 23423(String), 234(String), 423(Integer), 423.0(Double)
+2014-02-26 23:47:51,578 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-26 23:50:24,781 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-26 23:50:33,062 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-26 23:51:19,734 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 23:51:20,734 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@31561822 (XID = 1382), (SESSIONID = 1), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-26 23:51:20,781 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ==>  Preparing: select case when max(id)+1 IS NULL then 1 else max(id)+1 end as nextVal from articoli 
+2014-02-26 23:51:21,796 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ==> Parameters: 
+2014-02-26 23:51:22,031 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-02-26 23:51:22,031 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.insertSelective - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@32461935 (XID = 1386), (SESSIONID = 3), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-02-26 23:51:22,031 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.insertSelective - ==>  Preparing: insert into JSTORE.ARTICOLI ( ID, TIPOLOGIA_ARTICOLO, QUANTITA, CODICE, DESCRIZIONE_BREVE, NOTE, SCARSITA, IMPORTO_UNITARIO ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2014-02-26 23:51:22,171 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.insertSelective - ==> Parameters: 1(Integer), 2(Integer), 10(Integer), 100(String), asdasd(String), ssdfsdfsdf(String), 4(Integer), 7.0(Double)
+2014-02-26 23:52:56,406 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-02-26 23:58:34,515 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.

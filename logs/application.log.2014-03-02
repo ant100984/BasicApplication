@@ -1,0 +1,45 @@
+2014-03-02 09:03:07,640 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-03-02 09:03:09,843 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-02 09:03:12,265 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@25751447 (XID = 1749), (SESSIONID = 1), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-03-02 09:03:12,312 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select ID, RAGIONE_SOCIALE, PIVA_CF, INDIRIZZO, CAP, CITTA, TELEFONO, EMAIL, THEME from JSTORE.APPLICATION_PROPERTIES 
+2014-03-02 09:03:13,375 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: 
+2014-03-02 09:03:18,984 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-02 09:03:19,000 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@11972164 (XID = 1753), (SESSIONID = 3), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-03-02 09:03:19,000 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==>  Preparing: select ID, DESCRIZIONE, CODICE, CONSIDERA_QUANTITA, CONSIDERA_FORNITORE from JSTORE.TIPOLOGIA_ARTICOLO 
+2014-03-02 09:03:19,078 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==> Parameters: 
+2014-03-02 09:14:13,953 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-03-02 09:14:15,718 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-02 09:14:17,406 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@4698780 (XID = 1749), (SESSIONID = 1), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-03-02 09:14:17,437 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select ID, RAGIONE_SOCIALE, PIVA_CF, INDIRIZZO, CAP, CITTA, TELEFONO, EMAIL, THEME from JSTORE.APPLICATION_PROPERTIES 
+2014-03-02 09:14:18,390 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: 
+2014-03-02 09:14:39,734 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-02 09:14:39,734 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@5725086 (XID = 1753), (SESSIONID = 3), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-03-02 09:14:39,734 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==>  Preparing: select ID, DESCRIZIONE, CODICE, CONSIDERA_QUANTITA, CONSIDERA_FORNITORE from JSTORE.TIPOLOGIA_ARTICOLO 
+2014-03-02 09:14:39,781 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==> Parameters: 
+2014-03-02 09:15:26,406 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-03-02 09:15:28,140 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-02 09:15:29,843 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@4698780 (XID = 1749), (SESSIONID = 1), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-03-02 09:15:29,875 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select ID, RAGIONE_SOCIALE, PIVA_CF, INDIRIZZO, CAP, CITTA, TELEFONO, EMAIL, THEME from JSTORE.APPLICATION_PROPERTIES 
+2014-03-02 09:15:30,812 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: 
+2014-03-02 09:15:43,578 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-03-02 09:15:45,453 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-02 09:15:47,609 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@11683192 (XID = 1749), (SESSIONID = 1), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-03-02 09:15:47,640 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select ID, RAGIONE_SOCIALE, PIVA_CF, INDIRIZZO, CAP, CITTA, TELEFONO, EMAIL, THEME from JSTORE.APPLICATION_PROPERTIES 
+2014-03-02 09:15:48,703 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: 
+2014-03-02 09:21:32,359 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-03-02 09:21:34,093 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-02 09:21:35,812 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@18937032 (XID = 1749), (SESSIONID = 1), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-03-02 09:21:35,843 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select ID, RAGIONE_SOCIALE, PIVA_CF, INDIRIZZO, CAP, CITTA, TELEFONO, EMAIL, THEME from JSTORE.APPLICATION_PROPERTIES 
+2014-03-02 09:21:36,781 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: 
+2014-03-02 09:22:19,500 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-02 09:22:19,500 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByPrimaryKey - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@20575514 (XID = 1753), (SESSIONID = 3), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-03-02 09:22:19,500 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByPrimaryKey - ==>  Preparing: select ID, RAGIONE_SOCIALE, PIVA_CF, INDIRIZZO, CAP, CITTA, TELEFONO, EMAIL, THEME , LOGO, LOGO_STAMPA from JSTORE.APPLICATION_PROPERTIES where ID = ? 
+2014-03-02 09:22:19,734 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByPrimaryKey - ==> Parameters: 1(Integer)
+2014-03-02 09:22:28,453 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-02 09:22:28,468 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@14300228 (XID = 1757), (SESSIONID = 5), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-03-02 09:22:28,468 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==>  Preparing: select ID, DESCRIZIONE, CODICE, CONSIDERA_QUANTITA, CONSIDERA_FORNITORE from JSTORE.TIPOLOGIA_ARTICOLO 
+2014-03-02 09:22:28,500 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==> Parameters: 
+2014-03-02 09:22:30,187 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-02 09:22:30,203 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@28081005 (XID = 1761), (SESSIONID = 7), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-03-02 09:22:30,203 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==>  Preparing: select ID, DESCRIZIONE, CODICE, CONSIDERA_QUANTITA, CONSIDERA_FORNITORE from JSTORE.TIPOLOGIA_ARTICOLO 
+2014-03-02 09:22:30,203 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==> Parameters: 

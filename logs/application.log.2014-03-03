@@ -1,0 +1,5 @@
+2014-03-03 23:59:23,312 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-03-03 23:59:25,359 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-03 23:59:27,343 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [org.apache.derby.impl.jdbc.EmbedConnection40@29267718 (XID = 1749), (SESSIONID = 1), (DATABASE = jStore_DB), (DRDAID = null) ]
+2014-03-03 23:59:27,375 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select id, ragione_sociale, piva_cf, indirizzo, cap, citta, telefono, email, theme from application_properties 
+2014-03-03 23:59:28,375 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: 

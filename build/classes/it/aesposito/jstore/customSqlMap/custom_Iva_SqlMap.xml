@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="custom_Iva" >
+    
+ <resultMap id="getIvaResultMap" type="it.aesposito.jstore.bean.Iva" >
+	  <result column="id" property="id" jdbcType="INTEGER" />
+	  <result column="descrizione" property="descrizione" jdbcType="VARCHAR" />
+	  <result column="iva" property="iva" jdbcType="DOUBLE" />
+	</resultMap>
+   
+	<select id="getIva" resultMap="getIvaResultMap" parameterType="java.util.Map">
+	      SELECT i.id,
+                     i.descrizione,
+                     i.iva
+                FROM iva i
+               WHERE 1=1
+        <if test="descrizione != null">
+                 AND i.descrizione like #{descrizione}
+        </if>
+	    ORDER BY id DESC
+        <if test="offset != -1 and limit != -1">
+            LIMIT #{offset},#{limit}
+        </if>
+	</select>
+  
+</mapper>

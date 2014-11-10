@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="custom_Categorie" >
+    
+ <resultMap id="getCategorieResultMap" type="it.aesposito.jstore.bean.Categorie" >
+	  <result column="id" property="id" jdbcType="INTEGER" />
+	  <result column="descrizione" property="descrizione" jdbcType="VARCHAR" />
+	  <result column="tipologia_articolo" property="tipologiaArticolo" jdbcType="INTEGER" />
+	</resultMap>
+   
+	<select id="getCategorie" resultMap="getCategorieResultMap" parameterType="java.util.Map">
+	      SELECT c.id,
+                     c.descrizione,
+                     c.tipologia_articolo
+                FROM categorie c
+               WHERE 1=1
+        <if test="descrizione != null">
+                 AND c.tipologia_articolo like #{tipologia_articolo}
+        </if>
+        <if test="tipologia_articolo != null">
+                 AND c.descrizione like #{descrizione}
+        </if>
+	    ORDER BY id DESC
+        <if test="offset != -1 and limit != -1">
+            LIMIT #{offset},#{limit}
+        </if>
+	</select>
+  
+</mapper>

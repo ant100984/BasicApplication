@@ -1,0 +1,848 @@
+2014-03-12 00:00:33,625 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-03-12 00:00:35,750 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:00:36,765 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@19c29f4]
+2014-03-12 00:00:36,796 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select id, ragione_sociale, piva_cf, indirizzo, cap, citta, telefono, email, theme, iva from application_properties 
+2014-03-12 00:00:36,968 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:00:40,812 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:00:40,859 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1a3b089]
+2014-03-12 00:00:40,859 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie 
+2014-03-12 00:00:40,859 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:00:42,593 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:00:42,625 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByPrimaryKey - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1c7625c]
+2014-03-12 00:00:42,625 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByPrimaryKey - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie where id = ? 
+2014-03-12 00:00:42,625 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByPrimaryKey - ==> Parameters: 2(Integer)
+2014-03-12 00:00:47,718 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:00:47,750 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.updateByPrimaryKey - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@108cee4]
+2014-03-12 00:00:47,750 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.updateByPrimaryKey - ==>  Preparing: update categorie set descrizione = ?, tipologia_articolo = ? where id = ? 
+2014-03-12 00:00:47,750 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.updateByPrimaryKey - ==> Parameters: Nail art(String), 2(Integer), 2(Integer)
+2014-03-12 00:00:47,750 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@108cee4]
+2014-03-12 00:00:47,781 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@108cee4]
+2014-03-12 00:00:47,781 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@108cee4]
+2014-03-12 00:00:50,046 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:00:50,078 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByPrimaryKey - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1a8e971]
+2014-03-12 00:00:50,093 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByPrimaryKey - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie where id = ? 
+2014-03-12 00:00:50,093 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByPrimaryKey - ==> Parameters: 3(Integer)
+2014-03-12 00:00:55,812 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:00:55,843 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1fda70b]
+2014-03-12 00:00:55,843 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie WHERE ( upper(descrizione) like ? ) 
+2014-03-12 00:00:55,843 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==> Parameters: %P%(String)
+2014-03-12 00:00:55,921 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:00:55,953 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@17061e8]
+2014-03-12 00:00:55,953 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie WHERE ( upper(descrizione) like ? ) 
+2014-03-12 00:00:55,953 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==> Parameters: %PR%(String)
+2014-03-12 00:00:56,046 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:00:56,078 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@177ad38]
+2014-03-12 00:00:56,078 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie WHERE ( upper(descrizione) like ? ) 
+2014-03-12 00:00:56,078 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==> Parameters: %PRO%(String)
+2014-03-12 00:00:57,468 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:00:57,500 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByPrimaryKey - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@4d7bbe]
+2014-03-12 00:00:57,500 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByPrimaryKey - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie where id = ? 
+2014-03-12 00:00:57,500 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByPrimaryKey - ==> Parameters: 4(Integer)
+2014-03-12 00:00:59,406 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:00:59,421 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1de5626]
+2014-03-12 00:00:59,421 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie 
+2014-03-12 00:00:59,421 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:00:59,468 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:00:59,500 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1764569]
+2014-03-12 00:00:59,500 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie 
+2014-03-12 00:00:59,500 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:05:04,593 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-03-12 00:05:06,531 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:05:07,562 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@18652ff]
+2014-03-12 00:05:07,593 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select id, ragione_sociale, piva_cf, indirizzo, cap, citta, telefono, email, theme, iva from application_properties 
+2014-03-12 00:05:07,765 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:05:11,531 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:05:11,578 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@7a195c]
+2014-03-12 00:05:11,578 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie WHERE ( tipologia_articolo = ? ) 
+2014-03-12 00:05:11,578 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==> Parameters: 1(Integer)
+2014-03-12 00:05:21,718 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:05:21,750 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@9dfdfd]
+2014-03-12 00:05:21,750 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie WHERE ( tipologia_articolo = ? ) 
+2014-03-12 00:05:21,765 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==> Parameters: 1(Integer)
+2014-03-12 00:05:37,281 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-03-12 00:05:39,234 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:05:40,265 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1b2fdc6]
+2014-03-12 00:05:40,281 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select id, ragione_sociale, piva_cf, indirizzo, cap, citta, telefono, email, theme, iva from application_properties 
+2014-03-12 00:05:40,437 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:05:44,484 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:05:44,531 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@de59f8]
+2014-03-12 00:05:44,531 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie WHERE ( tipologia_articolo = ? ) 
+2014-03-12 00:05:44,531 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==> Parameters: 1(Integer)
+2014-03-12 00:05:48,812 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:05:48,859 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByPrimaryKey - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1f04eff]
+2014-03-12 00:05:48,859 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByPrimaryKey - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie where id = ? 
+2014-03-12 00:05:48,859 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByPrimaryKey - ==> Parameters: 3(Integer)
+2014-03-12 00:05:53,843 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:05:53,890 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByPrimaryKey - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1ad1594]
+2014-03-12 00:05:53,890 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByPrimaryKey - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie where id = ? 
+2014-03-12 00:05:53,890 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByPrimaryKey - ==> Parameters: 1(Integer)
+2014-03-12 00:05:56,015 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:05:56,062 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByPrimaryKey - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@b64063]
+2014-03-12 00:05:56,062 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByPrimaryKey - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie where id = ? 
+2014-03-12 00:05:56,062 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByPrimaryKey - ==> Parameters: 4(Integer)
+2014-03-12 00:05:58,062 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:05:58,093 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1d021b6]
+2014-03-12 00:05:58,093 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie WHERE ( tipologia_articolo = ? ) 
+2014-03-12 00:05:58,093 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==> Parameters: 1(Integer)
+2014-03-12 00:06:03,390 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:06:03,453 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1541df4]
+2014-03-12 00:06:03,453 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie WHERE ( tipologia_articolo = ? and upper(descrizione) like ? ) 
+2014-03-12 00:06:03,453 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==> Parameters: 1(Integer), %S%(String)
+2014-03-12 00:06:03,531 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:06:03,562 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@37fd3f]
+2014-03-12 00:06:03,562 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie WHERE ( tipologia_articolo = ? and upper(descrizione) like ? ) 
+2014-03-12 00:06:03,562 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==> Parameters: 1(Integer), %SM%(String)
+2014-03-12 00:06:05,375 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:06:05,406 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByPrimaryKey - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@19d34ca]
+2014-03-12 00:06:05,406 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByPrimaryKey - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie where id = ? 
+2014-03-12 00:06:05,406 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByPrimaryKey - ==> Parameters: 3(Integer)
+2014-03-12 00:06:07,031 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:06:07,062 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@40d241]
+2014-03-12 00:06:07,062 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie WHERE ( tipologia_articolo = ? ) 
+2014-03-12 00:06:07,062 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==> Parameters: 1(Integer)
+2014-03-12 00:06:07,093 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:06:07,109 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@102f380]
+2014-03-12 00:06:07,109 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie WHERE ( tipologia_articolo = ? ) 
+2014-03-12 00:06:07,109 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==> Parameters: 1(Integer)
+2014-03-12 00:06:10,125 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:06:10,140 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1c6f55b]
+2014-03-12 00:06:10,140 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie WHERE ( tipologia_articolo = ? ) 
+2014-03-12 00:06:10,140 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==> Parameters: 1(Integer)
+2014-03-12 00:06:11,171 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:06:11,203 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByPrimaryKey - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@7fde12]
+2014-03-12 00:06:11,203 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByPrimaryKey - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie where id = ? 
+2014-03-12 00:06:11,203 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByPrimaryKey - ==> Parameters: 1(Integer)
+2014-03-12 00:06:13,656 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:06:13,671 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.updateByPrimaryKey - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@959fce]
+2014-03-12 00:06:13,671 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.updateByPrimaryKey - ==>  Preparing: update categorie set descrizione = ?, tipologia_articolo = ? where id = ? 
+2014-03-12 00:06:13,671 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.updateByPrimaryKey - ==> Parameters: Creme corpo(String), 1(Integer), 1(Integer)
+2014-03-12 00:06:13,671 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@959fce]
+2014-03-12 00:06:13,687 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@959fce]
+2014-03-12 00:06:13,687 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@959fce]
+2014-03-12 00:06:20,984 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:06:21,000 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@90b3f7]
+2014-03-12 00:06:21,000 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie WHERE ( tipologia_articolo = ? ) 
+2014-03-12 00:06:21,000 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==> Parameters: 1(Integer)
+2014-03-12 00:07:27,421 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-03-12 00:07:29,593 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:07:30,750 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1d75c05]
+2014-03-12 00:07:30,781 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select id, ragione_sociale, piva_cf, indirizzo, cap, citta, telefono, email, theme, iva from application_properties 
+2014-03-12 00:07:30,937 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:07:37,078 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:07:37,125 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1d1f61c]
+2014-03-12 00:07:37,125 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie WHERE ( tipologia_articolo = ? ) 
+2014-03-12 00:07:37,125 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==> Parameters: 2(Integer)
+2014-03-12 00:07:40,234 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:07:40,281 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByPrimaryKey - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@f34748]
+2014-03-12 00:07:40,281 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByPrimaryKey - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie where id = ? 
+2014-03-12 00:07:40,281 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByPrimaryKey - ==> Parameters: 2(Integer)
+2014-03-12 00:07:42,265 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:07:42,312 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByPrimaryKey - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@17bb372]
+2014-03-12 00:07:42,312 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByPrimaryKey - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie where id = ? 
+2014-03-12 00:07:42,312 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByPrimaryKey - ==> Parameters: 5(Integer)
+2014-03-12 00:07:45,078 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:07:45,109 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@c62866]
+2014-03-12 00:07:45,109 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie WHERE ( tipologia_articolo = ? and upper(descrizione) like ? ) 
+2014-03-12 00:07:45,109 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==> Parameters: 2(Integer), %N%(String)
+2014-03-12 00:07:45,453 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:07:45,484 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@7a3ebd]
+2014-03-12 00:07:45,484 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie WHERE ( tipologia_articolo = ? and upper(descrizione) like ? ) 
+2014-03-12 00:07:45,484 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==> Parameters: 2(Integer), %NA%(String)
+2014-03-12 00:07:46,984 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:07:47,000 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@bc752]
+2014-03-12 00:07:47,000 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie WHERE ( tipologia_articolo = ? ) 
+2014-03-12 00:07:47,015 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==> Parameters: 2(Integer)
+2014-03-12 00:07:47,046 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:07:47,078 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@11b8d7d]
+2014-03-12 00:07:47,078 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie WHERE ( tipologia_articolo = ? ) 
+2014-03-12 00:07:47,078 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==> Parameters: 2(Integer)
+2014-03-12 00:07:48,328 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:07:48,359 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByPrimaryKey - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@121b1fe]
+2014-03-12 00:07:48,359 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByPrimaryKey - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie where id = ? 
+2014-03-12 00:07:48,359 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByPrimaryKey - ==> Parameters: 2(Integer)
+2014-03-12 00:07:50,437 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:07:50,468 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@172ba0f]
+2014-03-12 00:07:50,468 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie WHERE ( tipologia_articolo = ? ) 
+2014-03-12 00:07:50,468 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==> Parameters: 2(Integer)
+2014-03-12 00:07:57,609 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:07:57,625 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@112c159]
+2014-03-12 00:07:57,625 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie WHERE ( tipologia_articolo = ? ) 
+2014-03-12 00:07:57,625 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==> Parameters: 1(Integer)
+2014-03-12 00:07:57,859 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:07:57,906 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1eaec09]
+2014-03-12 00:07:57,906 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ==>  Preparing: SELECT a.id, a.tipologia_articolo, a.giacenza, a.codice, a.descrizione, a.note, a.scarsita, a.importo_unitario, a.fornitore, a.iva, c.descrizione AS categoria FROM articoli a LEFT JOIN categorie c ON c.id = a.categoria WHERE 1=1 AND a.codice like ? AND a.descrizione like ? ORDER BY id DESC 
+2014-03-12 00:07:57,906 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ==> Parameters: %(String), %%(String)
+2014-03-12 00:08:01,593 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:08:01,625 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@86753c]
+2014-03-12 00:08:01,625 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie WHERE ( tipologia_articolo = ? ) 
+2014-03-12 00:08:01,625 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==> Parameters: 1(Integer)
+2014-03-12 00:08:26,984 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:08:27,000 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1ca82d5]
+2014-03-12 00:08:27,000 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==>  Preparing: select id, descrizione, codice, considera_quantita, considera_fornitore from tipologia_articolo 
+2014-03-12 00:08:27,000 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:08:44,250 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:08:44,265 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@15c2bdb]
+2014-03-12 00:08:44,265 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ==>  Preparing: select case when max(id)+1 IS NULL then 1 else max(id)+1 end as nextVal from categorie 
+2014-03-12 00:08:44,265 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ==> Parameters: 
+2014-03-12 00:08:44,484 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:08:44,515 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.insert - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@3f0fa1]
+2014-03-12 00:08:44,515 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.insert - ==>  Preparing: insert into categorie (id, descrizione, tipologia_articolo ) values (?, ?, ? ) 
+2014-03-12 00:08:44,531 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.insert - ==> Parameters: 6(Integer), null, null
+2014-03-12 00:08:44,546 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@3f0fa1]
+2014-03-12 00:08:44,578 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3f0fa1]
+2014-03-12 00:08:44,578 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@3f0fa1]
+2014-03-12 00:08:44,593 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:08:44,640 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1db08bf]
+2014-03-12 00:08:44,640 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ==>  Preparing: SELECT a.id, a.tipologia_articolo, a.giacenza, a.codice, a.descrizione, a.note, a.scarsita, a.importo_unitario, a.fornitore, a.iva, c.descrizione AS categoria FROM articoli a LEFT JOIN categorie c ON c.id = a.categoria WHERE 1=1 AND a.codice like ? AND a.descrizione like ? ORDER BY id DESC 
+2014-03-12 00:08:44,640 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ==> Parameters: %(String), %%(String)
+2014-03-12 00:12:08,343 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-03-12 00:12:10,406 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:12:11,453 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@32eebb]
+2014-03-12 00:12:11,484 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select id, ragione_sociale, piva_cf, indirizzo, cap, citta, telefono, email, theme, iva from application_properties 
+2014-03-12 00:12:11,640 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:12:19,468 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:12:19,515 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1d0ac94]
+2014-03-12 00:12:19,515 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==>  Preparing: select id, descrizione, codice, considera_quantita, considera_fornitore from tipologia_articolo 
+2014-03-12 00:12:19,515 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:12:42,875 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:12:42,921 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@11de0da]
+2014-03-12 00:12:42,921 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ==>  Preparing: select case when max(id)+1 IS NULL then 1 else max(id)+1 end as nextVal from categorie 
+2014-03-12 00:12:42,921 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ==> Parameters: 
+2014-03-12 00:12:43,140 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:12:43,203 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.insert - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@10ac05f]
+2014-03-12 00:12:43,203 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.insert - ==>  Preparing: insert into categorie (id, descrizione, tipologia_articolo ) values (?, ?, ? ) 
+2014-03-12 00:12:43,203 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.insert - ==> Parameters: 7(Integer), Listino Prodotti Base(String), 1(Integer)
+2014-03-12 00:12:43,203 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@10ac05f]
+2014-03-12 00:12:43,218 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@10ac05f]
+2014-03-12 00:12:43,218 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@10ac05f]
+2014-03-12 00:14:28,750 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-03-12 00:14:30,671 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:14:31,703 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1b2fdc6]
+2014-03-12 00:14:31,734 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select id, ragione_sociale, piva_cf, indirizzo, cap, citta, telefono, email, theme, iva from application_properties 
+2014-03-12 00:14:31,906 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:14:36,140 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:14:36,187 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1f40f8f]
+2014-03-12 00:14:36,187 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==>  Preparing: select id, descrizione, codice, considera_quantita, considera_fornitore from tipologia_articolo 
+2014-03-12 00:14:36,187 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:14:50,265 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:14:50,312 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1a54b82]
+2014-03-12 00:14:50,312 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ==>  Preparing: select case when max(id)+1 IS NULL then 1 else max(id)+1 end as nextVal from listino 
+2014-03-12 00:14:50,312 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ==> Parameters: 
+2014-03-12 00:14:50,328 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:14:50,359 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.insert - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@a54d32]
+2014-03-12 00:14:50,359 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.insert - ==>  Preparing: insert into listino (id, descrizione, ricarico, tipologia_listino) values (?, ?, ?, ?) 
+2014-03-12 00:14:50,375 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.insert - ==> Parameters: 1(Integer), Listino Prodotti Base(String), 20.0(Double), 1(Integer)
+2014-03-12 00:14:50,375 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@a54d32]
+2014-03-12 00:14:50,406 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@a54d32]
+2014-03-12 00:14:50,406 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@a54d32]
+2014-03-12 00:32:51,343 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-03-12 00:32:53,265 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:32:54,343 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1cccddf]
+2014-03-12 00:32:54,375 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select id, ragione_sociale, piva_cf, indirizzo, cap, citta, telefono, email, theme, iva from application_properties 
+2014-03-12 00:32:54,531 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:34:43,515 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-03-12 00:34:45,718 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:34:46,843 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@536490]
+2014-03-12 00:34:46,875 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select id, ragione_sociale, piva_cf, indirizzo, cap, citta, telefono, email, theme, iva from application_properties 
+2014-03-12 00:34:47,031 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:34:56,390 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:34:56,437 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@7f54e7]
+2014-03-12 00:34:56,437 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==>  Preparing: select id, descrizione, codice, considera_quantita, considera_fornitore from tipologia_articolo 
+2014-03-12 00:34:56,437 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:34:57,171 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:34:57,218 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@4fcb6c]
+2014-03-12 00:34:57,218 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==>  Preparing: select id, descrizione, ricarico, tipologia_listino from listino WHERE ( tipologia_listino = ? ) 
+2014-03-12 00:34:57,218 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==> Parameters: 1(Integer)
+2014-03-12 00:36:03,375 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-03-12 00:36:05,312 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:36:06,343 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@ef3b8b]
+2014-03-12 00:36:06,375 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select id, ragione_sociale, piva_cf, indirizzo, cap, citta, telefono, email, theme, iva from application_properties 
+2014-03-12 00:36:06,546 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:36:11,906 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:36:11,953 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@13d44fc]
+2014-03-12 00:36:11,953 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==>  Preparing: select id, descrizione, codice, considera_quantita, considera_fornitore from tipologia_articolo 
+2014-03-12 00:36:11,953 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:36:12,671 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:36:12,703 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@b41f9c]
+2014-03-12 00:36:12,703 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==>  Preparing: select id, descrizione, ricarico, tipologia_listino from listino WHERE ( tipologia_listino = ? ) 
+2014-03-12 00:36:12,703 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==> Parameters: 1(Integer)
+2014-03-12 00:36:20,343 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:36:20,390 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@19ec2d4]
+2014-03-12 00:36:20,390 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==>  Preparing: select id, descrizione, ricarico, tipologia_listino from listino WHERE ( tipologia_listino = ? ) 
+2014-03-12 00:36:20,390 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==> Parameters: 1(Integer)
+2014-03-12 00:36:22,125 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:36:22,156 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1700eb2]
+2014-03-12 00:36:22,156 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==>  Preparing: select id, descrizione, ricarico, tipologia_listino from listino WHERE ( tipologia_listino = ? ) 
+2014-03-12 00:36:22,156 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==> Parameters: 2(Integer)
+2014-03-12 00:36:25,609 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:36:25,656 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@98b133]
+2014-03-12 00:36:25,656 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==>  Preparing: select id, descrizione, ricarico, tipologia_listino from listino WHERE ( tipologia_listino = ? ) 
+2014-03-12 00:36:25,656 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==> Parameters: 1(Integer)
+2014-03-12 00:37:16,656 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-03-12 00:37:18,609 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:37:19,625 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@536490]
+2014-03-12 00:37:19,656 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select id, ragione_sociale, piva_cf, indirizzo, cap, citta, telefono, email, theme, iva from application_properties 
+2014-03-12 00:37:19,828 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:37:26,421 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:37:26,468 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@91ec31]
+2014-03-12 00:37:26,468 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==>  Preparing: select id, descrizione, codice, considera_quantita, considera_fornitore from tipologia_articolo 
+2014-03-12 00:37:26,484 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:37:27,187 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:37:27,218 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1af9c90]
+2014-03-12 00:37:27,218 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==>  Preparing: select id, descrizione, ricarico, tipologia_listino from listino WHERE ( tipologia_listino = ? ) 
+2014-03-12 00:37:27,218 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==> Parameters: 1(Integer)
+2014-03-12 00:38:02,906 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-03-12 00:38:04,750 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:38:05,781 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@ac8cda]
+2014-03-12 00:38:05,812 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select id, ragione_sociale, piva_cf, indirizzo, cap, citta, telefono, email, theme, iva from application_properties 
+2014-03-12 00:38:05,953 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:38:09,671 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:38:09,718 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@19f2397]
+2014-03-12 00:38:09,718 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==>  Preparing: select id, descrizione, codice, considera_quantita, considera_fornitore from tipologia_articolo 
+2014-03-12 00:38:09,718 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:38:10,421 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:38:10,468 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1526c2b]
+2014-03-12 00:38:10,468 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==>  Preparing: select id, descrizione, ricarico, tipologia_listino from listino WHERE ( tipologia_listino = ? ) 
+2014-03-12 00:38:10,468 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==> Parameters: 1(Integer)
+2014-03-12 00:38:16,359 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:38:16,390 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@56310a]
+2014-03-12 00:38:16,390 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==>  Preparing: select id, descrizione, ricarico, tipologia_listino from listino WHERE ( tipologia_listino = ? ) 
+2014-03-12 00:38:16,390 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==> Parameters: 1(Integer)
+2014-03-12 00:39:21,562 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-03-12 00:39:23,453 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:39:24,484 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@536490]
+2014-03-12 00:39:24,515 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select id, ragione_sociale, piva_cf, indirizzo, cap, citta, telefono, email, theme, iva from application_properties 
+2014-03-12 00:39:24,687 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:39:28,390 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:39:28,437 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@bc749]
+2014-03-12 00:39:28,453 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==>  Preparing: select id, descrizione, codice, considera_quantita, considera_fornitore from tipologia_articolo 
+2014-03-12 00:39:28,453 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:39:28,921 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:39:28,953 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@18f0acd]
+2014-03-12 00:39:28,953 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==>  Preparing: select id, descrizione, ricarico, tipologia_listino from listino 
+2014-03-12 00:39:28,968 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:39:33,703 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:39:33,750 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1ad0726]
+2014-03-12 00:39:33,750 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==>  Preparing: select id, descrizione, codice, considera_quantita, considera_fornitore from tipologia_articolo 
+2014-03-12 00:39:33,750 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:39:33,859 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:39:33,906 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByPrimaryKey - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@18164cc]
+2014-03-12 00:39:33,906 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByPrimaryKey - ==>  Preparing: select id, descrizione, ricarico, tipologia_listino from listino where id = ? 
+2014-03-12 00:39:33,906 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByPrimaryKey - ==> Parameters: 1(Integer)
+2014-03-12 00:39:40,156 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:39:40,203 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@57ee6]
+2014-03-12 00:39:40,203 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==>  Preparing: select id, descrizione, ricarico, tipologia_listino from listino WHERE ( tipologia_listino = ? ) 
+2014-03-12 00:39:40,203 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==> Parameters: 2(Integer)
+2014-03-12 00:39:41,468 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:39:41,500 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@313657]
+2014-03-12 00:39:41,500 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==>  Preparing: select id, descrizione, ricarico, tipologia_listino from listino 
+2014-03-12 00:39:41,500 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:39:41,515 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:39:41,546 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@173dbe5]
+2014-03-12 00:39:41,546 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==>  Preparing: select id, descrizione, ricarico, tipologia_listino from listino 
+2014-03-12 00:39:41,546 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:39:44,359 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:39:44,375 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1616864]
+2014-03-12 00:39:44,375 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==>  Preparing: select id, descrizione, codice, considera_quantita, considera_fornitore from tipologia_articolo 
+2014-03-12 00:39:44,375 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:40:05,234 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:40:05,250 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@613b3a]
+2014-03-12 00:40:05,250 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ==>  Preparing: select case when max(id)+1 IS NULL then 1 else max(id)+1 end as nextVal from listino 
+2014-03-12 00:40:05,250 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ==> Parameters: 
+2014-03-12 00:40:05,265 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:40:05,281 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.insert - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@14f21f3]
+2014-03-12 00:40:05,281 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.insert - ==>  Preparing: insert into listino (id, descrizione, ricarico, tipologia_listino) values (?, ?, ?, ?) 
+2014-03-12 00:40:05,281 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.insert - ==> Parameters: 2(Integer), Listino Prestazioni Base(String), 25.0(Double), 2(Integer)
+2014-03-12 00:40:05,296 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@14f21f3]
+2014-03-12 00:40:05,328 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@14f21f3]
+2014-03-12 00:40:05,328 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@14f21f3]
+2014-03-12 00:40:07,703 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:40:07,718 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@6df971]
+2014-03-12 00:40:07,718 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==>  Preparing: select id, descrizione, codice, considera_quantita, considera_fornitore from tipologia_articolo 
+2014-03-12 00:40:07,718 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:40:07,828 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:40:07,843 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@fd55cc]
+2014-03-12 00:40:07,843 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==>  Preparing: select id, descrizione, ricarico, tipologia_listino from listino 
+2014-03-12 00:40:07,843 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:40:27,562 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:40:27,578 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@104e3f1]
+2014-03-12 00:40:27,578 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==>  Preparing: select id, descrizione, codice, considera_quantita, considera_fornitore from tipologia_articolo 
+2014-03-12 00:40:27,578 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:40:27,625 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:40:27,640 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByPrimaryKey - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1a5cff8]
+2014-03-12 00:40:27,640 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByPrimaryKey - ==>  Preparing: select id, descrizione, ricarico, tipologia_listino from listino where id = ? 
+2014-03-12 00:40:27,640 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByPrimaryKey - ==> Parameters: 1(Integer)
+2014-03-12 00:41:20,781 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:41:20,812 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@235b30]
+2014-03-12 00:41:20,812 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==>  Preparing: select id, descrizione, codice, considera_quantita, considera_fornitore from tipologia_articolo 
+2014-03-12 00:41:20,812 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:41:20,859 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:41:20,890 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByPrimaryKey - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@4ba6de]
+2014-03-12 00:41:20,890 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByPrimaryKey - ==>  Preparing: select id, descrizione, ricarico, tipologia_listino from listino where id = ? 
+2014-03-12 00:41:20,890 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByPrimaryKey - ==> Parameters: 2(Integer)
+2014-03-12 00:41:30,296 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:41:30,312 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@14cc8ce]
+2014-03-12 00:41:30,312 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==>  Preparing: select id, descrizione, ricarico, tipologia_listino from listino WHERE ( tipologia_listino = ? ) 
+2014-03-12 00:41:30,312 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==> Parameters: 1(Integer)
+2014-03-12 00:41:32,890 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:41:32,921 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@4f2d78]
+2014-03-12 00:41:32,921 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==>  Preparing: select id, descrizione, ricarico, tipologia_listino from listino WHERE ( tipologia_listino = ? ) 
+2014-03-12 00:41:32,921 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==> Parameters: 2(Integer)
+2014-03-12 00:41:40,531 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:41:40,562 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@88008f]
+2014-03-12 00:41:40,562 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==>  Preparing: select id, descrizione, ricarico, tipologia_listino from listino WHERE ( tipologia_listino = ? and upper(descrizione) like ? ) 
+2014-03-12 00:41:40,562 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==> Parameters: 2(Integer), %B%(String)
+2014-03-12 00:41:40,625 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:41:40,656 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@611244]
+2014-03-12 00:41:40,656 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==>  Preparing: select id, descrizione, ricarico, tipologia_listino from listino WHERE ( tipologia_listino = ? and upper(descrizione) like ? ) 
+2014-03-12 00:41:40,656 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==> Parameters: 2(Integer), %BA%(String)
+2014-03-12 00:41:40,765 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:41:40,781 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@c40ce]
+2014-03-12 00:41:40,781 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==>  Preparing: select id, descrizione, ricarico, tipologia_listino from listino WHERE ( tipologia_listino = ? and upper(descrizione) like ? ) 
+2014-03-12 00:41:40,796 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==> Parameters: 2(Integer), %BAS%(String)
+2014-03-12 00:41:41,031 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:41:41,062 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1513ba9]
+2014-03-12 00:41:41,062 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==>  Preparing: select id, descrizione, ricarico, tipologia_listino from listino WHERE ( tipologia_listino = ? and upper(descrizione) like ? ) 
+2014-03-12 00:41:41,062 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==> Parameters: 2(Integer), %BASE%(String)
+2014-03-12 00:41:42,203 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:41:42,218 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@17c84ad]
+2014-03-12 00:41:42,218 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==>  Preparing: select id, descrizione, ricarico, tipologia_listino from listino 
+2014-03-12 00:41:42,218 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:41:42,250 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:41:42,281 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@74645b]
+2014-03-12 00:41:42,281 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==>  Preparing: select id, descrizione, ricarico, tipologia_listino from listino 
+2014-03-12 00:41:42,281 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:41:42,281 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:41:42,312 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@99b6af]
+2014-03-12 00:41:42,312 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==>  Preparing: select id, descrizione, ricarico, tipologia_listino from listino 
+2014-03-12 00:41:42,312 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:41:54,671 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:41:54,703 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@14f5dd7]
+2014-03-12 00:41:54,703 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==>  Preparing: select id, descrizione, codice, considera_quantita, considera_fornitore from tipologia_articolo 
+2014-03-12 00:41:54,703 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:41:54,734 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:41:54,765 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByPrimaryKey - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@f2fcf2]
+2014-03-12 00:41:54,765 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByPrimaryKey - ==>  Preparing: select id, descrizione, ricarico, tipologia_listino from listino where id = ? 
+2014-03-12 00:41:54,765 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByPrimaryKey - ==> Parameters: 1(Integer)
+2014-03-12 00:41:58,437 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:41:58,468 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@3d673]
+2014-03-12 00:41:58,468 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==>  Preparing: select id, descrizione, ricarico, tipologia_listino from listino 
+2014-03-12 00:41:58,468 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:47:17,046 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-03-12 00:47:18,968 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:47:19,984 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@ac8cda]
+2014-03-12 00:47:20,015 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select id, ragione_sociale, piva_cf, indirizzo, cap, citta, telefono, email, theme, iva from application_properties 
+2014-03-12 00:47:20,171 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:47:24,859 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:47:24,906 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@4bffa1]
+2014-03-12 00:47:24,906 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==>  Preparing: select id, descrizione, codice, considera_quantita, considera_fornitore from tipologia_articolo 
+2014-03-12 00:47:24,921 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:47:25,390 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:47:25,437 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@e3226]
+2014-03-12 00:47:25,437 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==>  Preparing: select id, descrizione, ricarico, tipologia_listino from listino 
+2014-03-12 00:47:25,437 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:47:27,828 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:47:27,875 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@148007e]
+2014-03-12 00:47:27,875 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==>  Preparing: select id, descrizione, codice, considera_quantita, considera_fornitore from tipologia_articolo 
+2014-03-12 00:47:27,875 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:47:27,984 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:47:28,031 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByPrimaryKey - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1f1c9]
+2014-03-12 00:47:28,031 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByPrimaryKey - ==>  Preparing: select id, descrizione, ricarico, tipologia_listino from listino where id = ? 
+2014-03-12 00:47:28,031 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByPrimaryKey - ==> Parameters: 2(Integer)
+2014-03-12 00:47:36,156 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:47:36,203 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@3a498c]
+2014-03-12 00:47:36,203 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==>  Preparing: select id, descrizione, codice, considera_quantita, considera_fornitore from tipologia_articolo 
+2014-03-12 00:47:36,203 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==> Parameters: 
+2014-03-12 00:47:36,250 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:47:36,281 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByPrimaryKey - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1c8ddb5]
+2014-03-12 00:47:36,281 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByPrimaryKey - ==>  Preparing: select id, descrizione, ricarico, tipologia_listino from listino where id = ? 
+2014-03-12 00:47:36,281 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByPrimaryKey - ==> Parameters: 2(Integer)
+2014-03-12 00:58:18,750 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-03-12 00:58:20,687 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 00:58:21,734 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@120cb10]
+2014-03-12 00:58:21,765 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select id, ragione_sociale, piva_cf, indirizzo, cap, citta, telefono, email, theme, iva from application_properties 
+2014-03-12 00:58:21,953 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:00:41,578 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-03-12 01:00:43,468 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:00:44,500 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@b5f36e]
+2014-03-12 01:00:44,515 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select id, ragione_sociale, piva_cf, indirizzo, cap, citta, telefono, email, theme, iva from application_properties 
+2014-03-12 01:00:44,671 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:00:48,203 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:00:48,250 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@a75865]
+2014-03-12 01:00:48,250 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==>  Preparing: select id, descrizione, iva from iva 
+2014-03-12 01:00:48,250 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:01:50,078 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-03-12 01:01:51,937 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:01:52,968 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@b5f36e]
+2014-03-12 01:01:53,000 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select id, ragione_sociale, piva_cf, indirizzo, cap, citta, telefono, email, theme, iva from application_properties 
+2014-03-12 01:01:53,156 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:01:56,687 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:01:56,750 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@9c7947]
+2014-03-12 01:01:56,750 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==>  Preparing: select id, descrizione, iva from iva 
+2014-03-12 01:01:56,750 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:02:04,640 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:02:04,687 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@76bf3c]
+2014-03-12 01:02:04,687 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==>  Preparing: select id, descrizione, iva from iva WHERE ( upper(descrizione) like ? ) 
+2014-03-12 01:02:04,687 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==> Parameters: %O%(String)
+2014-03-12 01:02:04,953 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:02:04,984 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@bb5def]
+2014-03-12 01:02:04,984 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==>  Preparing: select id, descrizione, iva from iva WHERE ( upper(descrizione) like ? ) 
+2014-03-12 01:02:05,000 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==> Parameters: %ORD%(String)
+2014-03-12 01:02:05,031 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:02:05,062 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@20afcb]
+2014-03-12 01:02:05,062 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==>  Preparing: select id, descrizione, iva from iva WHERE ( upper(descrizione) like ? ) 
+2014-03-12 01:02:05,062 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==> Parameters: %ORD%(String)
+2014-03-12 01:02:05,093 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:02:05,140 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1042592]
+2014-03-12 01:02:05,140 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==>  Preparing: select id, descrizione, iva from iva WHERE ( upper(descrizione) like ? ) 
+2014-03-12 01:02:05,140 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==> Parameters: %ORDI%(String)
+2014-03-12 01:02:06,968 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:02:07,000 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByPrimaryKey - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1304e33]
+2014-03-12 01:02:07,000 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByPrimaryKey - ==>  Preparing: select id, descrizione, iva from iva where id = ? 
+2014-03-12 01:02:07,000 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByPrimaryKey - ==> Parameters: 3(Integer)
+2014-03-12 01:02:26,687 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-03-12 01:02:28,578 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:02:29,593 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@b5f36e]
+2014-03-12 01:02:29,625 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select id, ragione_sociale, piva_cf, indirizzo, cap, citta, telefono, email, theme, iva from application_properties 
+2014-03-12 01:02:29,781 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:02:41,640 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:02:41,687 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1dbb592]
+2014-03-12 01:02:41,687 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ==>  Preparing: select case when max(id)+1 IS NULL then 1 else max(id)+1 end as nextVal from iva 
+2014-03-12 01:02:41,687 [AWT-EventQueue-0] DEBUG custom_nextVal.dynamicNextVal - ==> Parameters: 
+2014-03-12 01:02:41,718 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:02:41,750 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.insert - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@c8d0b7]
+2014-03-12 01:02:41,750 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.insert - ==>  Preparing: insert into iva (id, descrizione, iva ) values (?, ?, ? ) 
+2014-03-12 01:02:41,750 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.insert - ==> Parameters: 4(Integer), super minima(String), 2.0(Double)
+2014-03-12 01:02:41,750 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@c8d0b7]
+2014-03-12 01:02:41,781 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@c8d0b7]
+2014-03-12 01:02:41,781 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@c8d0b7]
+2014-03-12 01:02:44,968 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:02:45,015 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1ba7069]
+2014-03-12 01:02:45,015 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==>  Preparing: select id, descrizione, iva from iva 
+2014-03-12 01:02:45,015 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:02:47,578 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:02:47,609 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByPrimaryKey - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1755401]
+2014-03-12 01:02:47,609 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByPrimaryKey - ==>  Preparing: select id, descrizione, iva from iva where id = ? 
+2014-03-12 01:02:47,625 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByPrimaryKey - ==> Parameters: 4(Integer)
+2014-03-12 01:02:53,078 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:02:53,109 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@81294]
+2014-03-12 01:02:53,109 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==>  Preparing: select id, descrizione, iva from iva 
+2014-03-12 01:02:53,125 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:03:56,328 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-03-12 01:03:58,375 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:03:59,546 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@6a686d]
+2014-03-12 01:03:59,578 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select id, ragione_sociale, piva_cf, indirizzo, cap, citta, telefono, email, theme, iva from application_properties 
+2014-03-12 01:03:59,734 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:04:10,265 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:04:10,312 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1ecc02f]
+2014-03-12 01:04:10,312 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==>  Preparing: select id, descrizione, iva from iva 
+2014-03-12 01:04:10,312 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:04:44,796 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:04:44,843 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByPrimaryKey - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@7f906b]
+2014-03-12 01:04:44,843 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByPrimaryKey - ==>  Preparing: select id, descrizione, iva from iva where id = ? 
+2014-03-12 01:04:44,843 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByPrimaryKey - ==> Parameters: 4(Integer)
+2014-03-12 01:05:51,093 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:05:51,171 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByPrimaryKey - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1858841]
+2014-03-12 01:05:51,171 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByPrimaryKey - ==>  Preparing: select id, descrizione, iva from iva where id = ? 
+2014-03-12 01:05:51,171 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByPrimaryKey - ==> Parameters: 4(Integer)
+2014-03-12 01:08:00,687 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:08:00,718 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@f04499]
+2014-03-12 01:08:00,718 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie WHERE ( tipologia_articolo = ? ) 
+2014-03-12 01:08:00,718 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==> Parameters: 1(Integer)
+2014-03-12 01:08:05,046 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:08:05,078 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1193317]
+2014-03-12 01:08:05,078 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie WHERE ( tipologia_articolo = ? ) 
+2014-03-12 01:08:05,093 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==> Parameters: 1(Integer)
+2014-03-12 01:08:05,609 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:08:05,640 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@b0a21a]
+2014-03-12 01:08:05,640 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ==>  Preparing: SELECT a.id, a.tipologia_articolo, a.giacenza, a.codice, a.descrizione, a.note, a.scarsita, a.importo_unitario, a.fornitore, a.iva, c.descrizione AS categoria FROM articoli a LEFT JOIN categorie c ON c.id = a.categoria WHERE 1=1 AND a.codice like ? AND a.descrizione like ? ORDER BY id DESC 
+2014-03-12 01:08:05,656 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ==> Parameters: %(String), %%(String)
+2014-03-12 01:08:43,984 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:08:44,015 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@2ba66a]
+2014-03-12 01:08:44,015 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ==>  Preparing: SELECT a.id, a.tipologia_articolo, a.giacenza, a.codice, a.descrizione, a.note, a.scarsita, a.importo_unitario, a.fornitore, a.iva, c.descrizione AS categoria FROM articoli a LEFT JOIN categorie c ON c.id = a.categoria WHERE 1=1 AND a.codice like ? AND a.descrizione like ? ORDER BY id DESC 
+2014-03-12 01:08:44,015 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ==> Parameters: %(String), %%(String)
+2014-03-12 01:08:52,968 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:08:53,015 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@70d828]
+2014-03-12 01:08:53,015 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ==>  Preparing: SELECT a.id, a.tipologia_articolo, a.giacenza, a.codice, a.descrizione, a.note, a.scarsita, a.importo_unitario, a.fornitore, a.iva, c.descrizione AS categoria FROM articoli a LEFT JOIN categorie c ON c.id = a.categoria WHERE 1=1 AND a.codice like ? AND a.descrizione like ? AND a.categoria = ? ORDER BY id DESC 
+2014-03-12 01:08:53,015 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ==> Parameters: %(String), %%(String), 7(Integer)
+2014-03-12 01:09:28,687 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:09:28,750 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@11e701a]
+2014-03-12 01:09:28,750 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ==>  Preparing: SELECT a.id, a.tipologia_articolo, a.giacenza, a.codice, a.descrizione, a.note, a.scarsita, a.importo_unitario, a.fornitore, a.iva, c.descrizione AS categoria FROM articoli a LEFT JOIN categorie c ON c.id = a.categoria WHERE 1=1 AND a.codice like ? AND a.descrizione like ? ORDER BY id DESC 
+2014-03-12 01:09:28,750 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ==> Parameters: %(String), %%(String)
+2014-03-12 01:09:28,781 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:09:28,812 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@172a844]
+2014-03-12 01:09:28,812 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ==>  Preparing: SELECT a.id, a.tipologia_articolo, a.giacenza, a.codice, a.descrizione, a.note, a.scarsita, a.importo_unitario, a.fornitore, a.iva, c.descrizione AS categoria FROM articoli a LEFT JOIN categorie c ON c.id = a.categoria WHERE 1=1 AND a.codice like ? AND a.descrizione like ? ORDER BY id DESC 
+2014-03-12 01:09:28,812 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ==> Parameters: %(String), %%(String)
+2014-03-12 01:12:09,531 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-03-12 01:12:11,359 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:12:12,375 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@b5f36e]
+2014-03-12 01:12:12,406 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select id, ragione_sociale, piva_cf, indirizzo, cap, citta, telefono, email, theme, iva from application_properties 
+2014-03-12 01:12:12,578 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:12:16,296 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:12:16,343 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@eaf91d]
+2014-03-12 01:12:16,343 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==>  Preparing: select id, descrizione, iva from iva 
+2014-03-12 01:12:16,343 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:12:17,765 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:12:17,812 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByPrimaryKey - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@dafcbf]
+2014-03-12 01:12:17,812 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByPrimaryKey - ==>  Preparing: select id, descrizione, iva from iva where id = ? 
+2014-03-12 01:12:17,812 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByPrimaryKey - ==> Parameters: 4(Integer)
+2014-03-12 01:12:35,687 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:12:35,718 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@dde202]
+2014-03-12 01:12:35,718 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==>  Preparing: select id, descrizione, iva from iva 
+2014-03-12 01:12:35,718 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:12:40,000 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:12:40,031 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@cd714c]
+2014-03-12 01:12:40,031 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==>  Preparing: select id, descrizione, iva from iva 
+2014-03-12 01:12:40,031 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:12:49,937 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:12:49,968 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1ec0be]
+2014-03-12 01:12:49,968 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==>  Preparing: select id, descrizione, iva from iva 
+2014-03-12 01:12:49,968 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:12:50,109 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:12:50,140 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByPrimaryKey - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@18ec8a3]
+2014-03-12 01:12:50,140 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByPrimaryKey - ==>  Preparing: select id, ragione_sociale, piva_cf, indirizzo, cap, citta, telefono, email, theme, iva , logo, logo_stampa from application_properties where id = ? 
+2014-03-12 01:12:50,140 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByPrimaryKey - ==> Parameters: 1(Integer)
+2014-03-12 01:12:57,156 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:12:57,187 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@9e3fa6]
+2014-03-12 01:12:57,187 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie WHERE ( tipologia_articolo = ? ) 
+2014-03-12 01:12:57,187 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==> Parameters: 1(Integer)
+2014-03-12 01:12:57,406 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:12:57,437 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@16cbc11]
+2014-03-12 01:12:57,437 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ==>  Preparing: SELECT a.id, a.tipologia_articolo, a.giacenza, a.codice, a.descrizione, a.note, a.scarsita, a.importo_unitario, a.fornitore, a.iva, c.descrizione AS categoria FROM articoli a LEFT JOIN categorie c ON c.id = a.categoria WHERE 1=1 AND a.codice like ? AND a.descrizione like ? ORDER BY id DESC 
+2014-03-12 01:12:57,437 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ==> Parameters: %(String), %%(String)
+2014-03-12 01:13:14,656 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:13:14,687 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@17a59c7]
+2014-03-12 01:13:14,687 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select id, ragione_sociale, piva_cf, indirizzo, cap, citta, telefono, email, theme, iva from application_properties 
+2014-03-12 01:13:14,687 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:13:14,703 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:13:14,718 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@97264f]
+2014-03-12 01:13:14,718 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie WHERE ( tipologia_articolo = ? ) 
+2014-03-12 01:13:14,718 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==> Parameters: 1(Integer)
+2014-03-12 01:13:14,750 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:13:14,765 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@6b633d]
+2014-03-12 01:13:14,765 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==>  Preparing: select id, descrizione, iva from iva 
+2014-03-12 01:13:14,765 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:13:14,828 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:13:14,843 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1ebe1e5]
+2014-03-12 01:13:14,859 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==>  Preparing: select id, descrizione, codice, considera_quantita, considera_fornitore from tipologia_articolo 
+2014-03-12 01:13:14,859 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:13:14,953 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:13:14,968 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.selectByPrimaryKey - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@a769d7]
+2014-03-12 01:13:14,968 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.selectByPrimaryKey - ==>  Preparing: select id, tipologia_articolo, giacenza, codice, descrizione, scarsita, importo_unitario, fornitore, iva, categoria, dtm_ins, dtm_mod , note from articoli where id = ? 
+2014-03-12 01:13:14,968 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.selectByPrimaryKey - ==> Parameters: 13(Integer)
+2014-03-12 01:13:33,953 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:13:33,984 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@104dd40]
+2014-03-12 01:13:33,984 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ==>  Preparing: SELECT a.id, a.tipologia_articolo, a.giacenza, a.codice, a.descrizione, a.note, a.scarsita, a.importo_unitario, a.fornitore, a.iva, c.descrizione AS categoria FROM articoli a LEFT JOIN categorie c ON c.id = a.categoria WHERE 1=1 AND a.codice like ? AND a.descrizione like ? ORDER BY id DESC 
+2014-03-12 01:13:33,984 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ==> Parameters: %(String), %%(String)
+2014-03-12 01:13:51,171 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-03-12 01:13:53,062 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:13:54,078 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@b5f36e]
+2014-03-12 01:13:54,109 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select id, ragione_sociale, piva_cf, indirizzo, cap, citta, telefono, email, theme, iva from application_properties 
+2014-03-12 01:13:54,281 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:14:34,593 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:14:34,640 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@fa9be4]
+2014-03-12 01:14:34,640 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select id, ragione_sociale, piva_cf, indirizzo, cap, citta, telefono, email, theme, iva from application_properties 
+2014-03-12 01:14:34,640 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:14:34,765 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:14:34,796 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@f4ba53]
+2014-03-12 01:14:34,796 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie WHERE ( tipologia_articolo = ? ) 
+2014-03-12 01:14:34,796 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==> Parameters: 2(Integer)
+2014-03-12 01:14:34,859 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:14:34,890 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@3612cc]
+2014-03-12 01:14:34,890 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==>  Preparing: select id, descrizione, iva from iva 
+2014-03-12 01:14:34,890 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:14:34,937 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:14:34,968 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1265c4b]
+2014-03-12 01:14:34,968 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==>  Preparing: select id, descrizione, codice, considera_quantita, considera_fornitore from tipologia_articolo 
+2014-03-12 01:14:34,968 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:14:44,062 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:14:44,093 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@6ccbb3]
+2014-03-12 01:14:44,093 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==>  Preparing: select id, descrizione, codice, considera_quantita, considera_fornitore from tipologia_articolo 
+2014-03-12 01:14:44,093 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:14:44,265 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:14:44,296 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@13f582a]
+2014-03-12 01:14:44,296 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==>  Preparing: select id, descrizione, ricarico, tipologia_listino from listino 
+2014-03-12 01:14:44,296 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ListinoMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:14:59,265 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:14:59,296 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@99e526]
+2014-03-12 01:14:59,296 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==>  Preparing: select id, descrizione, iva from iva 
+2014-03-12 01:14:59,296 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:15:13,843 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:15:13,859 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1577a53]
+2014-03-12 01:15:13,859 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie WHERE ( tipologia_articolo = ? ) 
+2014-03-12 01:15:13,859 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==> Parameters: 2(Integer)
+2014-03-12 01:15:28,671 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:15:28,687 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1b9f7e8]
+2014-03-12 01:15:28,687 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie WHERE ( tipologia_articolo = ? ) 
+2014-03-12 01:15:28,703 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==> Parameters: 2(Integer)
+2014-03-12 01:15:31,828 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:15:31,859 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByPrimaryKey - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@f3a6eb]
+2014-03-12 01:15:31,859 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByPrimaryKey - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie where id = ? 
+2014-03-12 01:15:31,859 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByPrimaryKey - ==> Parameters: 2(Integer)
+2014-03-12 01:15:36,890 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:15:36,921 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.updateByPrimaryKey - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@ade7a]
+2014-03-12 01:15:36,921 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.updateByPrimaryKey - ==>  Preparing: update categorie set descrizione = ?, tipologia_articolo = ? where id = ? 
+2014-03-12 01:15:36,921 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.updateByPrimaryKey - ==> Parameters: Nail arte(String), 2(Integer), 2(Integer)
+2014-03-12 01:15:36,921 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@ade7a]
+2014-03-12 01:15:36,937 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@ade7a]
+2014-03-12 01:15:36,937 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@ade7a]
+2014-03-12 01:15:50,031 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-03-12 01:15:51,984 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:15:53,000 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@b5f36e]
+2014-03-12 01:15:53,031 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select id, ragione_sociale, piva_cf, indirizzo, cap, citta, telefono, email, theme, iva from application_properties 
+2014-03-12 01:15:53,187 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:16:06,171 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:16:06,218 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@125379e]
+2014-03-12 01:16:06,218 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select id, ragione_sociale, piva_cf, indirizzo, cap, citta, telefono, email, theme, iva from application_properties 
+2014-03-12 01:16:06,218 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:16:06,359 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:16:06,406 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@fe5d98]
+2014-03-12 01:16:06,406 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie WHERE ( tipologia_articolo = ? ) 
+2014-03-12 01:16:06,406 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==> Parameters: 2(Integer)
+2014-03-12 01:16:06,468 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:16:06,500 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@15eaa49]
+2014-03-12 01:16:06,500 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==>  Preparing: select id, descrizione, iva from iva 
+2014-03-12 01:16:06,500 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:16:06,562 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:16:06,593 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1e7ffcc]
+2014-03-12 01:16:06,593 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==>  Preparing: select id, descrizione, codice, considera_quantita, considera_fornitore from tipologia_articolo 
+2014-03-12 01:16:06,593 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:16:20,781 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:16:20,812 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@7ebc39]
+2014-03-12 01:16:20,812 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie WHERE ( tipologia_articolo = ? ) 
+2014-03-12 01:16:20,812 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==> Parameters: 2(Integer)
+2014-03-12 01:16:23,093 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:16:23,140 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByPrimaryKey - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1a23d7c]
+2014-03-12 01:16:23,140 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByPrimaryKey - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie where id = ? 
+2014-03-12 01:16:23,140 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByPrimaryKey - ==> Parameters: 2(Integer)
+2014-03-12 01:16:26,328 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:16:26,359 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.updateByPrimaryKey - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@12354e4]
+2014-03-12 01:16:26,359 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.updateByPrimaryKey - ==>  Preparing: update categorie set descrizione = ?, tipologia_articolo = ? where id = ? 
+2014-03-12 01:16:26,359 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.updateByPrimaryKey - ==> Parameters: Nail art(String), 2(Integer), 2(Integer)
+2014-03-12 01:16:26,359 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@12354e4]
+2014-03-12 01:16:26,375 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@12354e4]
+2014-03-12 01:16:26,390 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@12354e4]
+2014-03-12 01:16:33,125 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:16:33,156 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@966724]
+2014-03-12 01:16:33,156 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie WHERE ( tipologia_articolo = ? ) 
+2014-03-12 01:16:33,156 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==> Parameters: 1(Integer)
+2014-03-12 01:16:33,375 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:16:33,390 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@e85102]
+2014-03-12 01:16:33,390 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ==>  Preparing: SELECT a.id, a.tipologia_articolo, a.giacenza, a.codice, a.descrizione, a.note, a.scarsita, a.importo_unitario, a.fornitore, a.iva, c.descrizione AS categoria FROM articoli a LEFT JOIN categorie c ON c.id = a.categoria WHERE 1=1 AND a.codice like ? AND a.descrizione like ? ORDER BY id DESC 
+2014-03-12 01:16:33,406 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ==> Parameters: %(String), %%(String)
+2014-03-12 01:16:35,703 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:16:35,734 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@53c90a]
+2014-03-12 01:16:35,734 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select id, ragione_sociale, piva_cf, indirizzo, cap, citta, telefono, email, theme, iva from application_properties 
+2014-03-12 01:16:35,734 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:16:35,750 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:16:35,765 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@667ed7]
+2014-03-12 01:16:35,765 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie WHERE ( tipologia_articolo = ? ) 
+2014-03-12 01:16:35,765 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==> Parameters: 1(Integer)
+2014-03-12 01:16:35,796 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:16:35,812 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1bd744c]
+2014-03-12 01:16:35,812 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==>  Preparing: select id, descrizione, iva from iva 
+2014-03-12 01:16:35,812 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:16:35,828 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:16:35,843 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@8f9533]
+2014-03-12 01:16:35,843 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==>  Preparing: select id, descrizione, codice, considera_quantita, considera_fornitore from tipologia_articolo 
+2014-03-12 01:16:35,859 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:16:35,968 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:16:35,984 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.selectByPrimaryKey - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@12342d9]
+2014-03-12 01:16:36,000 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.selectByPrimaryKey - ==>  Preparing: select id, tipologia_articolo, giacenza, codice, descrizione, scarsita, importo_unitario, fornitore, iva, categoria, dtm_ins, dtm_mod , note from articoli where id = ? 
+2014-03-12 01:16:36,000 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.selectByPrimaryKey - ==> Parameters: 16(Integer)
+2014-03-12 01:16:43,281 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:16:43,312 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.updateByPrimaryKeyWithBLOBs - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@a18951]
+2014-03-12 01:16:43,312 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.updateByPrimaryKeyWithBLOBs - ==>  Preparing: update articoli set tipologia_articolo = ?, giacenza = ?, codice = ?, descrizione = ?, scarsita = ?, importo_unitario = ?, fornitore = ?, iva = ?, categoria = ?, dtm_ins = ?, dtm_mod = ?, note = ? where id = ? 
+2014-03-12 01:16:43,312 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.updateByPrimaryKeyWithBLOBs - ==> Parameters: 1(Integer), 14(Integer), 120(String), lkjjhgjhghj(String), 5(Integer), 12.0(Double), null, 22.0(Double), 1(Integer), 2014-03-12 00:00:00.0(Timestamp), 2014-03-12 00:00:00.0(Timestamp), java.io.StringReader@1bb3f4a(StringReader), 16(Integer)
+2014-03-12 01:16:43,312 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@a18951]
+2014-03-12 01:16:43,343 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@a18951]
+2014-03-12 01:16:43,343 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@a18951]
+2014-03-12 01:16:43,359 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:16:43,375 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@bbc556]
+2014-03-12 01:16:43,375 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ==>  Preparing: SELECT a.id, a.tipologia_articolo, a.giacenza, a.codice, a.descrizione, a.note, a.scarsita, a.importo_unitario, a.fornitore, a.iva, c.descrizione AS categoria FROM articoli a LEFT JOIN categorie c ON c.id = a.categoria WHERE 1=1 AND a.codice like ? AND a.descrizione like ? ORDER BY id DESC 
+2014-03-12 01:16:43,375 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ==> Parameters: %(String), %%(String)
+2014-03-12 01:16:47,781 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:16:47,796 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@5bcb22]
+2014-03-12 01:16:47,796 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ==>  Preparing: SELECT a.id, a.tipologia_articolo, a.giacenza, a.codice, a.descrizione, a.note, a.scarsita, a.importo_unitario, a.fornitore, a.iva, c.descrizione AS categoria FROM articoli a LEFT JOIN categorie c ON c.id = a.categoria WHERE 1=1 AND a.codice like ? AND a.descrizione like ? ORDER BY id DESC 
+2014-03-12 01:16:47,796 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ==> Parameters: %(String), %%(String)
+2014-03-12 01:17:56,093 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-03-12 01:17:57,984 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:17:59,015 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@b5f36e]
+2014-03-12 01:17:59,046 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select id, ragione_sociale, piva_cf, indirizzo, cap, citta, telefono, email, theme, iva from application_properties 
+2014-03-12 01:17:59,218 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:18:02,921 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:18:02,968 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@6c6cf3]
+2014-03-12 01:18:02,968 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie WHERE ( tipologia_articolo = ? ) 
+2014-03-12 01:18:02,984 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==> Parameters: 1(Integer)
+2014-03-12 01:18:03,484 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:18:03,531 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@d0d407]
+2014-03-12 01:18:03,531 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ==>  Preparing: SELECT a.id, a.tipologia_articolo, a.giacenza, a.codice, a.descrizione, a.note, a.scarsita, a.importo_unitario, a.fornitore, a.iva, c.descrizione AS categoria FROM articoli a LEFT JOIN categorie c ON c.id = a.categoria WHERE 1=1 AND a.codice like ? AND a.descrizione like ? ORDER BY id DESC 
+2014-03-12 01:18:03,531 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ==> Parameters: %(String), %%(String)
+2014-03-12 01:18:07,625 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:18:07,656 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@12354e4]
+2014-03-12 01:18:07,656 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select id, ragione_sociale, piva_cf, indirizzo, cap, citta, telefono, email, theme, iva from application_properties 
+2014-03-12 01:18:07,656 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:18:07,671 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:18:07,703 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@f3f85]
+2014-03-12 01:18:07,703 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie WHERE ( tipologia_articolo = ? ) 
+2014-03-12 01:18:07,703 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==> Parameters: 1(Integer)
+2014-03-12 01:18:07,734 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:18:07,781 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1e176f9]
+2014-03-12 01:18:07,781 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==>  Preparing: select id, descrizione, iva from iva 
+2014-03-12 01:18:07,781 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:18:07,828 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:18:07,859 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1dfbf22]
+2014-03-12 01:18:07,859 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==>  Preparing: select id, descrizione, codice, considera_quantita, considera_fornitore from tipologia_articolo 
+2014-03-12 01:18:07,859 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:18:08,015 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:18:08,046 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.selectByPrimaryKey - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@b82366]
+2014-03-12 01:18:08,046 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.selectByPrimaryKey - ==>  Preparing: select id, tipologia_articolo, giacenza, codice, descrizione, scarsita, importo_unitario, fornitore, iva, categoria, dtm_ins, dtm_mod , note from articoli where id = ? 
+2014-03-12 01:18:08,046 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.selectByPrimaryKey - ==> Parameters: 17(Integer)
+2014-03-12 01:18:15,109 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:18:15,125 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1117021]
+2014-03-12 01:18:15,125 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ==>  Preparing: SELECT a.id, a.tipologia_articolo, a.giacenza, a.codice, a.descrizione, a.note, a.scarsita, a.importo_unitario, a.fornitore, a.iva, c.descrizione AS categoria FROM articoli a LEFT JOIN categorie c ON c.id = a.categoria WHERE 1=1 AND a.codice like ? AND a.descrizione like ? ORDER BY id DESC 
+2014-03-12 01:18:15,125 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ==> Parameters: %(String), %%(String)
+2014-03-12 01:18:17,515 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:18:17,546 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1d7f901]
+2014-03-12 01:18:17,546 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select id, ragione_sociale, piva_cf, indirizzo, cap, citta, telefono, email, theme, iva from application_properties 
+2014-03-12 01:18:17,546 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:18:17,562 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:18:17,578 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1a2275c]
+2014-03-12 01:18:17,578 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==>  Preparing: select id, descrizione, tipologia_articolo from categorie WHERE ( tipologia_articolo = ? ) 
+2014-03-12 01:18:17,578 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.CategorieMapper.selectByExample - ==> Parameters: 1(Integer)
+2014-03-12 01:18:17,593 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:18:17,625 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@a2e43]
+2014-03-12 01:18:17,625 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==>  Preparing: select id, descrizione, iva from iva 
+2014-03-12 01:18:17,625 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:18:17,640 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:18:17,656 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@41be48]
+2014-03-12 01:18:17,656 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==>  Preparing: select id, descrizione, codice, considera_quantita, considera_fornitore from tipologia_articolo 
+2014-03-12 01:18:17,656 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.TipologiaArticoloMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:18:17,734 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:18:17,765 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.selectByPrimaryKey - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1a805d2]
+2014-03-12 01:18:17,765 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.selectByPrimaryKey - ==>  Preparing: select id, tipologia_articolo, giacenza, codice, descrizione, scarsita, importo_unitario, fornitore, iva, categoria, dtm_ins, dtm_mod , note from articoli where id = ? 
+2014-03-12 01:18:17,765 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.selectByPrimaryKey - ==> Parameters: 16(Integer)
+2014-03-12 01:18:24,765 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:18:24,781 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.updateByPrimaryKeyWithBLOBs - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@15652a2]
+2014-03-12 01:18:24,781 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.updateByPrimaryKeyWithBLOBs - ==>  Preparing: update articoli set tipologia_articolo = ?, giacenza = ?, codice = ?, descrizione = ?, scarsita = ?, importo_unitario = ?, fornitore = ?, iva = ?, categoria = ?, dtm_ins = ?, dtm_mod = ?, note = ? where id = ? 
+2014-03-12 01:18:24,781 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ArticoliMapper.updateByPrimaryKeyWithBLOBs - ==> Parameters: 1(Integer), 14(Integer), 120(String), lkjjhgjhghjkjhkjhjk(String), 5(Integer), 12.0(Double), null, 22.0(Double), 1(Integer), 2014-03-12 00:00:00.0(Timestamp), 2014-03-12 00:00:00.0(Timestamp), java.io.StringReader@10e6d6e(StringReader), 16(Integer)
+2014-03-12 01:18:24,796 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@15652a2]
+2014-03-12 01:18:24,812 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@15652a2]
+2014-03-12 01:18:24,812 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@15652a2]
+2014-03-12 01:18:24,812 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:18:24,843 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@14c6598]
+2014-03-12 01:18:24,843 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ==>  Preparing: SELECT a.id, a.tipologia_articolo, a.giacenza, a.codice, a.descrizione, a.note, a.scarsita, a.importo_unitario, a.fornitore, a.iva, c.descrizione AS categoria FROM articoli a LEFT JOIN categorie c ON c.id = a.categoria WHERE 1=1 AND a.codice like ? AND a.descrizione like ? ORDER BY id DESC 
+2014-03-12 01:18:24,843 [AWT-EventQueue-0] DEBUG custom_Articoli.getArticoli - ==> Parameters: %(String), %%(String)
+2014-03-12 01:19:44,921 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2014-03-12 01:19:46,812 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:19:47,859 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@180ce9c]
+2014-03-12 01:19:47,890 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==>  Preparing: select id, ragione_sociale, piva_cf, indirizzo, cap, citta, telefono, email, theme, iva from application_properties 
+2014-03-12 01:19:48,062 [main] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:19:51,500 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:19:51,562 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@109b42]
+2014-03-12 01:19:51,562 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==>  Preparing: select id, descrizione, iva from iva 
+2014-03-12 01:19:51,562 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.IvaMapper.selectByExample - ==> Parameters: 
+2014-03-12 01:19:51,953 [AWT-EventQueue-0] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Openning JDBC Connection
+2014-03-12 01:19:52,000 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByPrimaryKey - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@1247c95]
+2014-03-12 01:19:52,000 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByPrimaryKey - ==>  Preparing: select id, ragione_sociale, piva_cf, indirizzo, cap, citta, telefono, email, theme, iva , logo, logo_stampa from application_properties where id = ? 
+2014-03-12 01:19:52,000 [AWT-EventQueue-0] DEBUG it.aesposito.jstore.dao.ApplicationPropertiesMapper.selectByPrimaryKey - ==> Parameters: 1(Integer)
